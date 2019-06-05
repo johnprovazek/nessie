@@ -1,9 +1,105 @@
 <html>
 <head>
-  <title>Nessie</title>
-  <link rel='icon' href='favicon.ico?' type='image/x-icon'/ >
+  <title>Nessie the Great</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="nessie.js"></script>
+  <link rel='icon' href='images/favicon.ico?' type='image/x-icon'/ >
 </head>
 <body>
-  <p>Nessie</p>
+  <div class="grid-container-main">
+    <img id="bandlogo" src="images/bandlogo.png">
+    <button class="btn" value="about" onclick="Toggle(this)">About</button>
+    <button class="btn" value="shows" onclick="Toggle(this)">Shows</button>
+    <button class="btn" value="music" onclick="Toggle(this)">Music</button>
+    <button class="btn" value="media" onclick="Toggle(this)">Media</button>
+    <button class="btn" value="contact" onclick="Toggle(this)">Contact</button>
+    <button class="btn" value="shop" onclick="Toggle(this)">Shop</button>
+    <div id="about-content" class="content">
+      <div class="grid-container-about">
+        <h1 id="about-title">About:</h1>
+        <span id="about-intro">
+          Nessie the Great is a band from San Jose, California. They play that
+          sweet reggae rock music you've heard so much about. Juan Carlos
+          Sandoval and Carson Lewis started playing music together in 2014 but
+          were always deprived of a drummer. Later on in 2016, Carson saw this
+          guy at school wearing the same sublime shirt that he had and decided
+          to randomly go up to him asking him if he played drums. It turned out
+          that this guy (Nic Corona) actually did play drums and a week later
+          they all started jamming together. This was the foundation of what
+          soon after was named "Nessie the Great". Our primary goals with this
+          band is to make people groove.
+        </span>
+        <h1 id="band-members-title">Band Members:</h1>
+        <img id="carson-pic" src="images/carson.jpg" width="100%">
+        <div id="carson-text">
+          <h3 style="margin:3px;">Carson Lewis</h3>
+          <span>
+            Plays the guitar and is known to slay on the mic. He is also an
+            accomplished basoon player and in his free time loves building minature
+            sailboats for the community.
+          </span>
+        </div>
+        <img id="juan-pic" src="images/juan.jpg" width="100%">
+        <div id="juan-text">
+          <h3 style="margin:3px;">Juan-Carlos Sandoval</h3>
+          <span>
+            Spiritual leader and group shamen. When he's not
+            taking sips from his trusty canteen he loves to
+            "Slappa da bass".
+            Ask him about his marble collection.
+          </span>
+        </div>
+        <img id="nic-pic" src="images/nick.jpg" width="100%">
+        <div id="nic-text">
+          <h3 style="margin:3px;">Nic Corona</h3>
+          <span>
+            Born with a drum stick in each one of his hands and has been banging
+            on drums ever since. When he's not filming Ghost Rider 5 he enjoys
+            taking long walks on the beach and flying kites.
+          </span>
+        </div>
+      </div>
+    </div>
+    <div id="shows-content" class="content">
+      <div class="grid-container-shows">
+        <h1 id="shows-title">Upcoming Shows:</h1>
+        <h2 class="text-center">Date:</h2>
+        <h2 class="text-center">Venue:</h2>
+        <h2 class="text-center">Time:</h2>
+        <h2 class="text-center">Price:</h2>
+        <div class="text-center">6/10/2019</div>
+        <div class="text-center">the catalyst</div>
+        <div class="text-center">7pm</div>
+        <div class="text-center">15$</div>
+        <div class="text-center">6/16/2019</div>
+        <div class="text-center">the venue</div>
+        <div class="text-center">10pm</div>
+        <div class="text-center">15$</div>
+        <div class="text-center">6/19/2019</div>
+        <div class="text-center">Chuck E. Cheese's</div>
+        <div class="text-center">3pm</div>
+        <div class="text-center">free</div>
+      </div>
+    </div>
+    <div id="music-content" class="content">
+      <h1 class="album-name">Chasing the Sun (2019)</h1>
+      <iframe src="https://open.spotify.com/embed/album/0GbnJ9TdOAFET46ukwtmYN" width="100%" height="455" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <h1 class="album-name">License to Splash (2017)</h1>
+      <iframe src="https://open.spotify.com/embed/album/6sxHlOXFoxnTgJAQCl1EMO" width="100%" height="236" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+    <div id="media-content" class="content">
+      <h1 class="text-center" style="margin:10px;">Dope media goes here</h1>
+    </div>
+    <div id="contact-content" class="content">
+      <h1 class="text-center" style="margin:10px;">Phone:</h1>
+      <div class="text-center">(408)893-7574</div>
+      <h1 class="text-center" style="margin:10px;">Email:</h1>
+      <div class="text-center">nessiethegreat3@gmail.com</div>
+    </div>
+    <div id="shop-content" class="content">
+      <h1 class="text-center" style="margin:10px;">Shop:</h1>
+      <div class="text-center"> We may start selling stuff here at somepoint, idk</div>
+    </div>
+  </div>
 </body>
 </html>
