@@ -1,105 +1,132 @@
 <html>
 <head>
-  <title>Nessie the Great</title>
-  <link rel="stylesheet" href="main.css">
-  <script src="nessie.js"></script>
-  <link rel='icon' href='images/favicon.ico?' type='image/x-icon'/ >
+    <title>Nessie the Great</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="nessie.js"></script>
+    <link rel='icon' href='images/favicon.ico?' type='image/x-icon'/ >
 </head>
 <body>
-  <div class="grid-container-main">
-    <img id="bandlogo" src="images/bandlogo.png">
-    <button class="btn" value="about" onclick="Toggle(this)">About</button>
-    <button class="btn" value="shows" onclick="Toggle(this)">Shows</button>
-    <button class="btn" value="music" onclick="Toggle(this)">Music</button>
-    <button class="btn" value="media" onclick="Toggle(this)">Media</button>
-    <button class="btn" value="contact" onclick="Toggle(this)">Contact</button>
-    <button class="btn" value="shop" onclick="Toggle(this)">Shop</button>
-    <div id="about-content" class="content">
-      <div class="grid-container-about">
-        <h1 id="about-title">About:</h1>
-        <span id="about-intro">
-          Nessie the Great is a band from San Jose, California. They play that
-          sweet reggae rock music you've heard so much about. Juan Carlos
-          Sandoval and Carson Lewis started playing music together in 2014 but
-          were always deprived of a drummer. Later on in 2016, Carson saw this
-          guy at school wearing the same sublime shirt that he had and decided
-          to randomly go up to him asking him if he played drums. It turned out
-          that this guy (Nic Corona) actually did play drums and a week later
-          they all started jamming together. This was the foundation of what
-          soon after was named "Nessie the Great". Our primary goals with this
-          band is to make people groove.
-        </span>
-        <h1 id="band-members-title">Band Members:</h1>
-        <img id="carson-pic" src="images/carson.jpg" width="100%">
-        <div id="carson-text">
-          <h3 style="margin:3px;">Carson Lewis</h3>
-          <span>
-            Plays the guitar and is known to slay on the mic. He is also an
-            accomplished basoon player and in his free time loves building minature
-            sailboats for the community.
-          </span>
+    <div class="grid-container-main">
+        <img class="noselect" id="main-band-logo" src="images/bandlogonoborder.png">
+        <button class="main-button noselect" value="about" onclick="Toggle(this)">About</button>
+        <button class="main-button noselect" value="music" onclick="Toggle(this)">Music</button>
+        <button class="main-button noselect" value="media" onclick="Toggle(this)">Media</button>
+        <button class="main-button noselect" value="contact" onclick="Toggle(this)">Contact</button>
+        <button class="main-button noselect" value="shop" onclick="Toggle(this)">Shop</button>
+        <div id="about-content" class="main-content">
+            <div class="grid-container-about">
+                <h1 id="about-title">About:</h1>
+                <span id="about-paragraph"> 
+                The story begins in San Jose, California. Juan Carlos Sandoval and Carson Lewis started playing music together in 2014 but were always deprived of a drummer. Eventually , they met drummer Nic Corona and started playing shows all over San Jose and the Bay Area. From 2016 up till 2019 the band was constantly playing shows wherever they could get booked. They became known for their reggae/rock sound and always had surprises in their live shows; you never knew when they would whip out a new and unexpected style. While blending genres, the bands backbone has always been reggae rock.  In 2020, just before the coronavirus pandemic hit, Nic Corona left the band. Early in the year 2021, Jettiny Ngo joined Nessie the Great as their new drummer. The band performed a few shows until an unfortunate turn of events required Juan Carlos to move to Texas for work. This however hasn't deterred the band and they are continuing to work on new music, sending tracks back and forth with each other, and releasing new songs. With their eyes set on success, they one day hope to hit the road and tour the world to spread that sweet reggae rock music to the globe. They have stated that their primary goals with this band is to "make people groove". Their latest single "All On You" is their most successful song to date and dropped on 10/1/2021
+                </span>
+                <h1 id="about-band-members-title">Band Members:</h1>
+                <img id="about-carson-pic" src="images/carson.jpg" width="100%">
+                <div id="about-carson-text">
+                    <h3>Carson Lewis</h3>
+                    <span>
+                        Plays the guitar and is known to slay on the mic. He is also an
+                        accomplished basoon player and in his free time loves building minature
+                        sailboats for the community. 
+                    </span>
+                </div>
+                <img id="about-juan-pic" src="images/juan.jpg" width="100%">
+                <div id="about-juan-text">
+                    <h3>Juan-Carlos Sandoval</h3>
+                    <span>
+                        Spiritual leader and group shamen. When he's not
+                        taking sips from his trusty canteen he loves to
+                        "Slappa da bass".
+                        Ask him about his marble collection.
+                    </span>
+                </div>
+                <img id="about-jet-pic" src="images/jet.jpg" width="100%">
+                <div id="about-jet-text">
+                    <h3>Jettiny Ngo</h3>
+                    <span>
+                        Born with a drum stick in each one of his hands and has been banging
+                        on drums ever since. Not much else is known about the Jet.
+                    </span>
+                </div>
+            </div>
         </div>
-        <img id="juan-pic" src="images/juan.jpg" width="100%">
-        <div id="juan-text">
-          <h3 style="margin:3px;">Juan-Carlos Sandoval</h3>
-          <span>
-            Spiritual leader and group shamen. When he's not
-            taking sips from his trusty canteen he loves to
-            "Slappa da bass".
-            Ask him about his marble collection.
-          </span>
+        <div id="music-content" class="main-content">
+            <div class="grid-container-music">
+                <h1 class="text-center">All On You (2021)</h1>
+                <iframe src="https://open.spotify.com/embed/album/2DGWuTWyZ9sheQFqqDnf0A" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                <h1 class="text-center">Midnight Rider (2020)</h1>
+                <iframe src="https://open.spotify.com/embed/track/2xrLUrzJzbxWNhdjst8Tmw" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                <h1 class="text-center">Chasing the Sun (2019)</h1>
+                <iframe src="https://open.spotify.com/embed/album/0GbnJ9TdOAFET46ukwtmYN" width="100%" height="452" frameborder="0"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                <h1 class="text-center">License to Splash (2017)</h1>
+                <iframe src="https://open.spotify.com/embed/album/6sxHlOXFoxnTgJAQCl1EMO" width="100%" height="236" frameborder="0"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
         </div>
-        <img id="nic-pic" src="images/nick.jpg" width="100%">
-        <div id="nic-text">
-          <h3 style="margin:3px;">Nic Corona</h3>
-          <span>
-            Born with a drum stick in each one of his hands and has been banging
-            on drums ever since. When he's not filming Ghost Rider 5 he enjoys
-            taking long walks on the beach and flying kites.
-          </span>
+        <div id="media-content" class="main-content iframe-containter">
+            <div class="grid-container-media">
+                <h1 class="text-center">Band Videos:</h1>
+                <div class="media-youtube-container">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WYWP9cwvXNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="media-youtube-container">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/os69ahINK_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="media-youtube-container">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/HD_4G4NnMM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="media-youtube-container">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/v1M9phEThqI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="media-youtube-container">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/rqHjETUXpwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="media-youtube-container">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YTZ0arY-5bk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="media-youtube-container">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9AsCpVexgF0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="media-youtube-container">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6QTd7xFr814" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="media-youtube-container">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/aPSeyXk8k0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <h1 class="text-center">Band Pics:</h1>
+                <img src="images/112e622994ca322bf695c7ddbf1ebba6.jpeg" width="100%">
+                <img src="images/92c46d90a5ab6698dc49a752e67c25c1.jpeg" width="100%">
+                <img src="images/PXL_20210627_010607970.jpg" width="100%">
+            </div>
         </div>
-      </div>
+        <div id="contact-content" class="main-content">
+            <div class="grid-container-contact">
+                <a class="contact-link" id="contact-instagram" href="https://www.instagram.com/nessiethegreatofficial/">
+                    <h1 class="text-center" >Instagram:</h1>
+                    <div class="text-center">nessiethegreatofficial</div>
+                </a>
+                <a class="contact-link" id="contact-tiktok" href="https://www.tiktok.com/@nessiethegreat?lang=en">
+                    <h1 class="text-center" >TikTok:</h1>
+                    <div class="text-center">nessiethegreat</div>
+                </a>
+                <a class="contact-link" id="contact-spotify" href="https://open.spotify.com/artist/1wg0T50ugsycU3EyXm38ib">
+                    <h1 class="text-center" >Spotify:</h1>
+                    <div class="text-center">Nessie the Great</div>
+                </a>
+                <a class="contact-link" id="contact-youtube" href="https://www.youtube.com/channel/UC2r6coaUzbQOjzX0NOOkUgw/videos">
+                    <h1 class="text-center" >Youtube:</h1>
+                    <div class="text-center">Nessie the Great</div>
+                </a>
+                <a class="contact-link" id="contact-email" href="mailto: band@nessiethegreat.com">
+                    <h1 class="text-center" >Email:</h1>
+                    <div class="text-center">band@nessiethegreat.com</div>
+                </a>
+            </div>
+        </div>
+        <div id="shop-content" class="main-content">
+            <div class="grid-container-shop">
+                <h1 class="text-center">Shop:</h1>
+                <div class="text-center">Check back later. We have no items for sale at this time.</div>
+            </div>
+        </div>
     </div>
-    <div id="shows-content" class="content">
-      <div class="grid-container-shows">
-        <h1 id="shows-title">Upcoming Shows:</h1>
-        <h2 class="text-center">Date:</h2>
-        <h2 class="text-center">Venue:</h2>
-        <h2 class="text-center">Time:</h2>
-        <h2 class="text-center">Price:</h2>
-        <div class="text-center">6/10/2019</div>
-        <div class="text-center">the catalyst</div>
-        <div class="text-center">7pm</div>
-        <div class="text-center">15$</div>
-        <div class="text-center">6/16/2019</div>
-        <div class="text-center">the venue</div>
-        <div class="text-center">10pm</div>
-        <div class="text-center">15$</div>
-        <div class="text-center">6/19/2019</div>
-        <div class="text-center">Chuck E. Cheese's</div>
-        <div class="text-center">3pm</div>
-        <div class="text-center">free</div>
-      </div>
-    </div>
-    <div id="music-content" class="content">
-      <h1 class="album-name">Chasing the Sun (2019)</h1>
-      <iframe src="https://open.spotify.com/embed/album/0GbnJ9TdOAFET46ukwtmYN" width="100%" height="455" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-      <h1 class="album-name">License to Splash (2017)</h1>
-      <iframe src="https://open.spotify.com/embed/album/6sxHlOXFoxnTgJAQCl1EMO" width="100%" height="236" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    </div>
-    <div id="media-content" class="content">
-      <h1 class="text-center" style="margin:10px;">Dope media goes here</h1>
-    </div>
-    <div id="contact-content" class="content">
-      <h1 class="text-center" style="margin:10px;">Phone:</h1>
-      <div class="text-center">(408)893-7574</div>
-      <h1 class="text-center" style="margin:10px;">Email:</h1>
-      <div class="text-center">nessiethegreat3@gmail.com</div>
-    </div>
-    <div id="shop-content" class="content">
-      <h1 class="text-center" style="margin:10px;">Shop:</h1>
-      <div class="text-center"> We may start selling stuff here at somepoint, idk</div>
-    </div>
-  </div>
 </body>
 </html>
