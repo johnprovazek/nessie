@@ -5,6 +5,7 @@ body {
     background-size: cover; /* Resize the background image to cover the entire container */
     background-attachment: fixed;
     font-family: Courier, Monospace;
+    font-size: 18px;
     margin: 0%; /* Nothing used to be here*/
     overflow: hidden; /* Hide scrollbars */
     caret-color: rgba(0,0,0,0); /* removing blinking cursor by making transparent */
