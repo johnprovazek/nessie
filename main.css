@@ -329,17 +329,17 @@ body {
 }
 
 .bold-title{
-    font-size: 2.5em;
-    margin-top:0.4em;
-    margin-bottom: 0.4em;
+    font-size: 4px;
+    margin-top:2px;
+    margin-bottom: 2px;
     font-weight: bold;
     text-align: center;
 }
 
 .bold-title-sm{
-    font-size: 1.5em;
-    margin-top:0.4em;
-    margin-bottom: 0.4em;
+    font-size: 4px;
+    margin-top:2px;
+    margin-bottom: 2px;
     font-weight: bold;
     text-align: center;
 }
