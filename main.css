@@ -93,7 +93,6 @@ body {
 #about-title {
     grid-column: 1 / span 3;
     grid-row: 1;
-    text-align: center;
 }
 #about-paragraph {
     grid-column: 1 / span 3;
@@ -103,7 +102,6 @@ body {
 #about-band-members-title {
     grid-column: 1 / span 3;
     grid-row: 3;
-    text-align: center;
 }
 #about-carson-pic {
     grid-column: 3;
@@ -112,9 +110,6 @@ body {
 #about-carson-text {
     grid-column: 1 / span 2;
     grid-row: 4;
-    text-align: center;
-    padding-top: auto;
-    padding-bottom: auto;
 }
 #about-juan-pic {
     grid-column: 3;
@@ -123,7 +118,6 @@ body {
 #about-juan-text {
     grid-column: 1 / span 2;
     grid-row: 5;
-    text-align: center;
 }
 #about-jet-pic {
     grid-column: 3;
@@ -132,7 +126,6 @@ body {
 #about-jet-text {
     grid-column: 1 / span 2;
     grid-row: 6;
-    text-align: center;
 }
 
 /* 
@@ -335,6 +328,28 @@ body {
     text-align: center;
 }
 
+.bold-title{
+    font-size: 2.5em;
+    margin-top:0.4em;
+    margin-bottom: 0.4em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bold-title-sm{
+    font-size: 1.5em;
+    margin-top:0.4em;
+    margin-bottom: 0.4em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.general-text{
+    font-size: 1em;
+    margin-top:0.4em;
+    margin-bottom: 0.4em;
+    text-align: center;
+}
 
 /* <div class="media-youtube-container">
 <iframe class="youtube" width="100%" height="100%" src="https://www.youtube.com/embed/os69ahINK_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
