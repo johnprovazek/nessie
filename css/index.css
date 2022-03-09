@@ -1,0 +1,373 @@
+html{
+    font-size: 18px;
+}
+
+body {
+    background-image: url("../img/DSC07856.jpg");
+    background-position:center top; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-attachment: fixed;
+    font-family: Courier, Monospace;
+    font-size: 18px;
+    margin: 0%; /* Nothing used to be here*/
+    overflow: hidden; /* Hide scrollbars */
+    caret-color: rgba(0,0,0,0); /* removing blinking cursor by making transparent */
+    width: 100%;
+    height: 100%;
+}
+
+/* 
+-                  _                    _     _ 
+-  _ __ ___   __ _(_)_ __     __ _ _ __(_) __| |
+- | '_ ` _ \ / _` | | '_ \   / _` | '__| |/ _` |
+- | | | | | | (_| | | | | | | (_| | |  | | (_| |
+- |_| |_| |_|\__,_|_|_| |_|  \__, |_|  |_|\__,_|
+-                            |___/              
+*/
+.grid-container-main {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 40vw;
+    height: 96vh;
+    grid-gap: 0.4vw;
+    grid-row-gap: 1vh;
+    grid-auto-rows: min-content min-content auto;
+}
+
+.main-button {
+    font-family: Courier, Monospace;
+    font-weight: bold;
+    font-size: 100%;
+    text-align: center;
+    background-color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+}
+
+.content {
+    overflow: scroll;
+    display: none;
+    grid-column: 1 / span 5;
+    grid-row: 3;
+    background-color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+}
+
+#main-band-logo {
+    grid-column: 1 / span 5;
+    grid-row: 1;
+    width: 100%;
+    -webkit-filter: drop-shadow(2px 0 black) /* Hack to keep logo border same size as button. Try on other browsers */
+            drop-shadow(-2px 0 black) 
+            drop-shadow(0 -2px 0 black) 
+            drop-shadow(0 2px 0 black); 
+    filter: drop-shadow(2px 0 black) /* Hack to keep logo border same size as button. Try on other browsers */
+            drop-shadow(-2px 0 black) 
+            drop-shadow(0 -2px 0 black) 
+            drop-shadow(0 2px 0 black); 
+}
+
+/*
+-        _                 _                _     _ 
+-   __ _| |__   ___  _   _| |_    __ _ _ __(_) __| |
+-  / _` | '_ \ / _ \| | | | __|  / _` | '__| |/ _` |
+- | (_| | |_) | (_) | |_| | |_  | (_| | |  | | (_| |
+-  \__,_|_.__/ \___/ \__,_|\__|  \__, |_|  |_|\__,_|
+-                                |___/              
+*/
+
+.grid-container-about {
+    display: grid;
+    width: 98%;
+    /* grid-gap: 0.98%; */
+    /* grid-row-gap: 0.4vw; */
+    grid-template-columns: 32.68% 32.68% 32.68%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#about-title {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+#about-paragraph {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    text-align: center;
+}
+#about-band-members-title {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+}
+#about-carson-pic {
+    grid-column: 3;
+    grid-row: 4;
+}
+#about-carson-text {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+}
+#about-juan-pic {
+    grid-column: 3;
+    grid-row: 5;
+}
+#about-juan-text {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+}
+#about-jet-pic {
+    grid-column: 3;
+    grid-row: 6;
+}
+#about-jet-text {
+    grid-column: 1 / span 2;
+    grid-row: 6;
+}
+
+/* 
+-     _                                    _     _ 
+- ___| |__   _____      _____    __ _ _ __(_) __| |
+-/ __| '_ \ / _ \ \ /\ / / __|  / _` | '__| |/ _` |
+-\__ \ | | | (_) \ V  V /\__ \ | (_| | |  | | (_| |
+-|___/_| |_|\___/ \_/\_/ |___/  \__, |_|  |_|\__,_|
+-                               |___/              
+*/
+
+
+/* .grid-container-shows {
+    display: grid;
+    width: 98%;
+    grid-gap: 0.98%;
+    grid-row-gap: 0.4vw;
+    grid-template-columns: 24.265% 24.265% 24.265% 24.265%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+#shows-title {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    text-align: center;
+} */
+
+/*
+-                     _                   _     _ 
+- _ __ ___  _   _ ___(_) ___    __ _ _ __(_) __| |
+-| '_ ` _ \| | | / __| |/ __|  / _` | '__| |/ _` |
+-| | | | | | |_| \__ \ | (__  | (_| | |  | | (_| |
+-|_| |_| |_|\__,_|___/_|\___|  \__, |_|  |_|\__,_|
+-                              |___/              
+*/
+
+.grid-container-music {
+    display: grid;
+}
+
+
+/*
+-                    _ _                    _     _ 
+- _ __ ___   ___  __| (_) __ _    __ _ _ __(_) __| |
+-| '_ ` _ \ / _ \/ _` | |/ _` |  / _` | '__| |/ _` |
+-| | | | | |  __/ (_| | | (_| | | (_| | |  | | (_| |
+-|_| |_| |_|\___|\__,_|_|\__,_|  \__, |_|  |_|\__,_|
+-                                |___/              
+*/
+
+.grid-container-media {
+    display: grid;
+    width: 98%;
+    grid-gap: 0.98%;
+    grid-row-gap: 0.4vw;
+    grid-template-columns: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#media-band-videos{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.media-youtube-container{
+    position: relative;
+    width:100%; 
+    padding-top: 56.25%;
+}
+
+.youtube{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+/*
+-                 _             _                _     _ 
+-  ___ ___  _ __ | |_ __ _  ___| |_    __ _ _ __(_) __| |
+- / __/ _ \| '_ \| __/ _` |/ __| __|  / _` | '__| |/ _` |
+-| (_| (_) | | | | || (_| | (__| |_  | (_| | |  | | (_| |
+- \___\___/|_| |_|\__\__,_|\___|\__|  \__, |_|  |_|\__,_|
+-                                     |___/              
+*/
+
+.grid-container-contact {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-auto-rows: auto;
+}
+
+.contact-link{
+    text-decoration:none;
+    color: black;
+}
+
+.contact-link:hover {
+    background-color: #FDBA21;
+}
+
+
+/*
+-     _                              _     _ 
+- ___| |__   ___  _ __     __ _ _ __(_) __| |
+-/ __| '_ \ / _ \| '_ \   / _` | '__| |/ _` |
+-\__ \ | | | (_) | |_) | | (_| | |  | | (_| |
+-|___/_| |_|\___/| .__/   \__, |_|  |_|\__,_|
+-                |_|      |___/              
+*/
+
+.grid-container-shop {
+    display: grid;
+    width: 98%;
+    grid-row-gap: 0.4vw;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+/*
+-                     _ _                               _           
+-  _ __ ___   ___  __| (_) __ _    __ _ _   _  ___ _ __(_) ___  ___ 
+- | '_ ` _ \ / _ \/ _` | |/ _` |  / _` | | | |/ _ \ '__| |/ _ \/ __|
+- | | | | | |  __/ (_| | | (_| | | (_| | |_| |  __/ |  | |  __/\__ \
+- |_| |_| |_|\___|\__,_|_|\__,_|  \__, |\__,_|\___|_|  |_|\___||___/
+-                                    |_|                            
+*/
+
+/* @media (min-aspect-ratio: 1000/1000) and (min-width: 0px) and (max-width: 800px){
+    .grid-container-main {
+        width: 90%;
+    }
+    .grid-container-about {
+        grid-row-gap: 0.9vw;
+    }
+    .grid-container-music {
+        grid-row-gap: 0.9vw;
+    }
+    .grid-container-media {
+        grid-row-gap: 0.9vw;
+    }
+    .media-youtube-container{
+        height:50.625vw;
+    }
+    
+} */
+
+@media (min-aspect-ratio: 1000/1000) and (min-width: 800px) and (max-width: 1072px){
+    .grid-container-main {
+        width: 60%;
+    }
+    .grid-container-about {
+        grid-row-gap: 0.6vw;
+    }
+    .grid-container-music {
+        grid-row-gap: 0.6vw;
+    }
+    .grid-container-media {
+        grid-row-gap: 0.6vw;
+    }
+    .media-youtube-container{
+        height:33.75vw;
+    }
+}
+
+@media (max-aspect-ratio: 1000/1000){
+    .grid-container-main {
+        width: 90%;
+    }
+    .grid-container-about {
+        /* grid-row-gap: 0.9vw; */
+    }
+    .grid-container-music {
+        /* grid-row-gap: 0.9vw; */
+    }
+    .grid-container-media {
+        /* grid-row-gap: 0.9vw; */
+    }
+    .media-youtube-container{
+        /* height:50.625vw; */
+    }
+}
+
+/*
+-       _   _               
+-  ___ | |_| |__   ___ _ __ 
+- / _ \| __| '_ \ / _ \ '__|
+-| (_) | |_| | | |  __/ |   
+- \___/ \__|_| |_|\___|_|   
+-                           
+*/
+
+.noselect { /* Makes text not able to be highlighted */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+::-webkit-scrollbar { /* Removes scrollbars. Need to test in other browswers */
+    width: 0px;
+    height: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+.text-center { /* add this class to center any test */
+    text-align: center;
+}
+
+.bold-title{
+    font-size: 45px !important;
+    margin-top:0.4em;
+    margin-bottom: 0.4em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bold-title-sm{
+    font-size: 1.5em;
+    margin-top:0.4em;
+    margin-bottom: 0.4em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.general-text{
+    font-size: 1em;
+    margin-top:0.4em;
+    margin-bottom: 0.4em;
+    text-align: center;
+}
