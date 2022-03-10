@@ -7,7 +7,7 @@ body {
     background-position:center top; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     font-family: Courier, Monospace;
     font-size: 18px;
     margin: 0%; /* Nothing used to be here*/
@@ -87,12 +87,13 @@ body {
 
 .grid-container-about {
     display: grid;
-    width: 98%;
+    width: 100%;
     /* grid-gap: 0.98%; */
     /* grid-row-gap: 0.4vw; */
-    grid-template-columns: 32.68% 32.68% 32.68%;
-    padding-left: 1%;
-    padding-right: 1%;
+    grid-template-columns: 33.3333% 33.3333% 33.3333%;
+    grid-template-rows: auto auto auto 1fr 1fr 1fr;
+    /* padding-left: 1%; */
+    /* padding-right: 1%; */
 }
 
 #about-title {
@@ -103,6 +104,9 @@ body {
     grid-column: 1 / span 3;
     grid-row: 2;
     text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin: 0;
 }
 #about-band-members-title {
     grid-column: 1 / span 3;
@@ -183,12 +187,6 @@ body {
 
 .grid-container-media {
     display: grid;
-    width: 98%;
-    grid-gap: 0.98%;
-    grid-row-gap: 0.4vw;
-    grid-template-columns: 100%;
-    padding-left: 1%;
-    padding-right: 1%;
 }
 
 #media-band-videos{
@@ -234,10 +232,21 @@ body {
     color: black;
 }
 
-.contact-link:hover {
+/* .contact-link:hover {
     background-color: #FDBA21;
+} */
+
+#contact-instagram,#contact-spotify,#contact-apple,#contact-twitch,#contact-twitter {
+    color:black;
+    /* background-color: #006BB8; */
+    background-image: linear-gradient(to right, white,#006BB8, white);
 }
 
+#contact-tiktok,#contact-youtube,#contact-soundcloud,#contact-facebook,#contact-email{
+    color:black;
+    /* background-color: #FDBA21; */
+    background-image: linear-gradient(to right, white, #FDBA21, white);
+}
 
 /*
 -     _                              _     _ 
@@ -250,10 +259,10 @@ body {
 
 .grid-container-shop {
     display: grid;
-    width: 98%;
-    grid-row-gap: 0.4vw;
-    padding-left: 1%;
-    padding-right: 1%;
+    width: 100%;
+    /* grid-row-gap: 0.4vw; */
+    /* padding-left: 1%; */
+    /* padding-right: 1%; */
 }
 
 /*
@@ -284,7 +293,7 @@ body {
     
 } */
 
-@media (min-aspect-ratio: 1000/1000) and (min-width: 800px) and (max-width: 1072px){
+@media (min-width: 800px) and (max-width: 1072px){
     .grid-container-main {
         width: 60%;
     }
@@ -302,21 +311,9 @@ body {
     }
 }
 
-@media (max-aspect-ratio: 1000/1000){
+@media (max-width: 799px){
     .grid-container-main {
         width: 90%;
-    }
-    .grid-container-about {
-        /* grid-row-gap: 0.9vw; */
-    }
-    .grid-container-music {
-        /* grid-row-gap: 0.9vw; */
-    }
-    .grid-container-media {
-        /* grid-row-gap: 0.9vw; */
-    }
-    .media-youtube-container{
-        /* height:50.625vw; */
     }
 }
 
@@ -355,6 +352,8 @@ body {
     margin-bottom: 0.4em;
     font-weight: bold;
     text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .bold-title-sm{
@@ -363,6 +362,8 @@ body {
     margin-bottom: 0.4em;
     font-weight: bold;
     text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .general-text{
@@ -370,4 +371,23 @@ body {
     margin-top:0.4em;
     margin-bottom: 0.4em;
     text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#travolta{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: min(100%, 490px)
+}
+
+.fancy-title{
+    /* text-shadow: -3px -3px 5px #FDBA21, 3px 3px 5px #006BB8; */
+    /* box-shadow: 0px 8px 0px red; */
+    /* text-decoration: underline black; */
+}
+
+.fancy-title-sm{
+    /* text-shadow: -2px -2px 5px #FDBA21, 2px 2px 5px #006BB8; */
 }
