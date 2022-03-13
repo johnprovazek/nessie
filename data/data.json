@@ -1,0 +1,27 @@
+{
+    "bandvideos": [
+        "https://www.youtube.com/watch?v=WYWP9cwvXNk",
+        "https://www.youtube.com/watch?v=os69ahINK_4",
+        "https://www.youtube.com/watch?v=HD_4G4NnMM8",
+        "https://www.youtube.com/watch?v=v1M9phEThqI",
+        "https://www.youtube.com/watch?v=rqHjETUXpwU",
+        "https://www.youtube.com/watch?v=YTZ0arY-5bk",
+        "https://www.youtube.com/watch?v=9AsCpVexgF0",
+        "https://www.youtube.com/watch?v=6QTd7xFr814",
+        "https://www.youtube.com/watch?v=aPSeyXk8k0E"
+    ],
+    "bandphotos": [
+        "https://lh3.googleusercontent.com/8zJzgI_GPx5K-tujHueo54AF2Yhu1HYpcQT0pVhx-s4fHAueZRWjlm8whQ7wm95zwWVm36pQYxpuUymwhpqW65xBcQv8R8k8DLZNY9oLSd6gZGskeHTITvoBZX0ysKcLZTPB_kbicU4",
+        "https://lh3.googleusercontent.com/RHERdSI_tW46uHNI8tQQdJZjo-FvjcFqdgYcvxiP5vL7DCraxdM1Idz-19uQmGNIM7X0S9fNcUrjdknw8WJrSw0jPliiIxmn-hH_6WAvtGAKKDfQMMrL5OnjovLQTxF7VFp5v8tKvY8",
+        "https://lh3.googleusercontent.com/DLJlJkbnUVU6q9BnvbhxLw7yoIqtC3fz3wA405juRd-7pgsp1sNw_TQBECbnclQCvLgJdrTMK13sqbeT5cXSp_c5EYHuuONh_TPoXN82Ul0ia6HJ_mnbQWbGTdSiLAKkLQKxXPDy-Wo"
+    ],
+    "boolean": true,
+    "color": "gold",
+    "null": null,
+    "number": 123,
+    "object": {
+        "a": "b",
+        "c": "d"
+    },
+    "string": "Hello World"
+}
