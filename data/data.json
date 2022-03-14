@@ -117,13 +117,5 @@
             "year": "2017",
             "tracks": "5"
         }
-    ],
-    "color": "gold",
-    "null": null,
-    "number": 123,
-    "object": {
-        "a": "b",
-        "c": "d"
-    },
-    "string": "Hello World"
+    ]
 }

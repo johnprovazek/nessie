@@ -3,34 +3,34 @@
     <title>nessiethegreat</title>
     <link rel='icon' href='img/favicon.ico?' type='image/x-icon'/ >
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/lite-yt-embed.css">
     <script src="js/index.js"></script>
     <script src="js/lite-yt-embed.js"></script>
+    <link rel="stylesheet" href="css/lite-yt-embed.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <div class="grid-container-main">
         <img class="noselect" id="main-band-logo" src="img/logo.svg" onclick="home()")>
         <button id="about-button" class="main-button noselect" value="about" onclick="toggle(this)">
-            <span class="main-button-text" style="display: none;">About</span>
-            <i class="main-button-icon fa fa-book" aria-hidden="true" style="display: none;"></i>
+            <span class="main-button-text">About</span>
+            <i class="main-button-icon fa fa-book"></i>
         </button>
         <button id="music-button" class="main-button noselect" value="music" onclick="toggle(this)">
-            <span class="main-button-text" style="display: none;">Music</span>
-            <i class="main-button-icon fa fa-music" aria-hidden="true" style="display: none;"></i>
+            <span class="main-button-text">Music</span>
+            <i class="main-button-icon fa fa-music"></i>
         </button>
-        <button id="media-button" class="main-button noselect" value="media" onclick="toggle(this)">
-            <span class="main-button-text" style="display: none;">Videos</span>
-            <i class="main-button-icon fa fa-youtube-play" aria-hidden="true" style="display: none;"></i>
+        <button id="videos-button" class="main-button noselect" value="videos" onclick="toggle(this)">
+            <span class="main-button-text">Videos</span>
+            <i class="main-button-icon fa fa-youtube-play"></i>
         </button>
-        <button id="contact-button" class="main-button noselect" value="contact" onclick="toggle(this)">
-            <span class="main-button-text" style="display: none;">Links</span>
-            <i class="main-button-icon fa fa-at" aria-hidden="true" style="display: none;"></i>
+        <button id="links-button" class="main-button noselect" value="links" onclick="toggle(this)">
+            <span class="main-button-text">Links</span>
+            <i class="main-button-icon fa fa-at"></i>
         </button>
         <button id="shop-button" class="main-button noselect" value="shop" onclick="toggle(this)">
-            <span class="main-button-text" style="display: none;">Shop</span>
-            <i class="main-button-icon fa fa-shopping-cart" aria-hidden="true" style="display: none;"></i>
+            <span class="main-button-text">Shop</span>
+            <i class="main-button-icon fa fa-shopping-cart"></i>
         </button>
         <div id="about-content" class="content">
             <div id="about-container" class="grid-container-about">
@@ -44,14 +44,14 @@
                 <div class="bold-title">Music:</div>
             </div>
         </div>
-        <div id="media-content" class="content">
-            <div id="media-container" class="grid-container-media">
-                <div class="bold-title" id="media-band-videos">Band Videos:</div>
-                <div class="bold-title" id="media-band-pictures">Band Pictures:</div>
+        <div id="videos-content" class="content">
+            <div id="videos-container" class="grid-container-videos">
+                <div class="bold-title" id="band-videos">Band Videos:</div>
+                <div class="bold-title" id="band-pictures">Band Pictures:</div>
             </div>
         </div>
-        <div id="contact-content" class="content">
-            <div id="contact-container" class="grid-container-contact">
+        <div id="links-content" class="content">
+            <div id="links-container" class="grid-container-links">
                 <div class="bold-title">Links:</div>
             </div>
         </div>

@@ -88,6 +88,10 @@ function setButtons(){
             texts[i].style.display = "block";
         }
     }
+    var mainbuttons = document.getElementsByClassName("main-button")
+    for (var i = 0; i < mainbuttons.length; i++) {
+        mainbuttons[i].style.display = "block";
+    }
 }
 
 /*  Determine if on a mobile device - taken from internet */
@@ -127,7 +131,7 @@ function addBandVideos(){
         var link = json_data["bandvideos"][i]
         var link_code = link.substring(link.length - 11)
         var youtubeContainer = document.createElement("div");
-        youtubeContainer.classList.add("media-youtube-container");
+        youtubeContainer.classList.add("videos-youtube-container");
         var title = document.createElement("div");
         title.classList.add("bold-title-sm");
         title.id = link_code + "_title"
@@ -136,7 +140,7 @@ function addBandVideos(){
         liteYoutube.setAttribute("videoid", link_code);
         // liteYoutube.setAttribute("params","autoplay=0")
         youtubeContainer.appendChild(liteYoutube);
-        var bandVideosTitle = document.getElementById("media-band-videos")
+        var bandVideosTitle = document.getElementById("band-videos")
         bandVideosTitle.parentNode.insertBefore(youtubeContainer, bandVideosTitle);
         readTextFile("https://www.youtube.com/oembed?url=" + link + "&format=json", link_code, function(text, video_id){
             youtube_video_data = JSON.parse(text);
@@ -161,14 +165,14 @@ function addBandPhotos(){
         imgElement.id = "bandpic" + i
         imgElement.style.width = "100%"
         imgElement.src = link + "=w" + max_width
-        var parent = document.getElementById("media-container")
+        var parent = document.getElementById("videos-container")
         parent.appendChild(imgElement);
     }
 }
 
 // Adds social links to the DOM from data.json
 function addLinks(){
-    var containerElement = document.getElementById("contact-container")
+    var containerElement = document.getElementById("links-container")
     for (var i = 0; i < json_data["links"].length; i++){
         var aElement = document.createElement("a");
         aElement.setAttribute("href",json_data["links"][i]["link"])
@@ -178,13 +182,13 @@ function addLinks(){
         iElement.classList.add("fa", json_data["links"][i]["logo"]);
         var textElement;
         if(i % 2 == 0) {
-            aElement.classList.add("contact-link", "contact-even")
+            aElement.classList.add("links-even")
             textElement = document.createTextNode(" " + json_data["links"][i]["text"]);
             divElement.appendChild(iElement);
             divElement.appendChild(textElement);
         }
         else{
-            aElement.classList.add("contact-link", "contact-odd")
+            aElement.classList.add("links-odd")
             textElement = document.createTextNode(json_data["links"][i]["text"] + " ");
             divElement.appendChild(textElement);
             divElement.appendChild(iElement);
@@ -214,7 +218,6 @@ function addAbout(){
     var containerElement = document.getElementById("about-container")
     for (var i = 0; i < json_data["bandmembers"].length; i++){
         var bandMemberText = document.createElement("div");
-        // bandMemberText.classList.add("about-band-member-text");
         var bandMemberName = document.createElement("div");
         bandMemberName.classList.add("bold-title-sm");
         var bandMemberNameText = document.createTextNode(json_data["bandmembers"][i]["name"]);
