@@ -10,7 +10,6 @@ window.addEventListener('load', function(event) {
     if(document.cookie == ""){
         document.cookie = "true"
     }
-    console.log(document.cookie)
     setButtons()
     readTextFile("data/data.json", "null", function(text){
         json_data = JSON.parse(text);
@@ -169,8 +168,8 @@ function addBandPhotos(){
 
 // Adds social links to the DOM from data.json
 function addLinks(){
+    var containerElement = document.getElementById("contact-container")
     for (var i = 0; i < json_data["links"].length; i++){
-        var containerElement = document.getElementById("contact-container")
         var aElement = document.createElement("a");
         aElement.setAttribute("href",json_data["links"][i]["link"])
         var divElement = document.createElement("div");
@@ -193,6 +192,10 @@ function addLinks(){
         aElement.appendChild(divElement)
         containerElement.appendChild(aElement)
     }
+    var monkey = document.createElement("img");
+    monkey.src = "img/suprisemonkey.gif"
+    monkey.id = "monkey"
+    containerElement.appendChild(monkey)
 }
 
 // Adds about content to the DOM from data.json
@@ -246,24 +249,6 @@ function addAbout(){
             containerElement.appendChild(bandMemberText);
         }
     }
-
-
-
-    // <div class="about-band-member-text">
-    //     <div class="bold-title-sm">Carson Lewis</div>
-    //     <div class="general-text">Plays the guitar and is known to slay on the mic. He is also an accomplished basoon player and in his free time loves building minature sailboats for the community.</div>
-    // </div>
-    // <img class="about-band-member-picture" src="https://lh3.googleusercontent.com/Cb66ulZCqjnC6hSqPGd7n1pnFV1IfYb616-CiW-k9pt_i7XazXenIPiHF8iI9s_w_bhOs4dQITpSYzJ8LJXjpVxHYhPjGkF7jBh6p9nLV8DSY5_Rl-23VJeZoR5LEd21S8HTToCVc8Y=w1000">
-    // <img class="about-band-member-picture-odd" src="https://lh3.googleusercontent.com/psLcMqSWlENwv-FQROogqPuwvaW1K-XomBva-ANuQi_fOkpgZN9PQ6ytBNu2XjCk73nySe0J4jiqkS-4LdGJCzJlsDp_3NHu3mIgpyqqL8nud7pH5UdalRScX9oJPKqI1IxY8E670Vk=w1000">
-    // <div class="about-band-member-text-odd">
-    //     <div class="bold-title-sm">Juan-Carlos Sandoval</div>
-    //     <div class="general-text">Spiritual leader and group shamen. When he's not taking sips from his trusty canteen he's studying Ancient Greek. Ask him about his marble collection.</div>
-    // </div>
-    // <div class="about-band-member-text">
-    //     <div class="bold-title-sm">Jettiny Ngo</div>
-    //     <div class="general-text">Born with a drum stick in each one of his hands and has been banging on drums ever since. Not much else is known about the Jet. He likes to keep it that way.</div>
-    // </div>
-    // <img class="about-band-member-picture" src="https://lh3.googleusercontent.com/8wkX1LxFFdoNqS_MqELnypDFst1J-i0iwmulAeDVFK36GFYelS1epzdnaK81Ju0yXfceEh_UGtW7vQRoKmIfZw58xTna6rsq6-y6UaljsJAoKXrFa6RkOgvCOEU8ongYIZT5RetP_Zs=w1000">
 }
 
 // Adds spotify albums to the DOM
@@ -295,6 +280,10 @@ function addSpotify(){
         iframeElement.setAttribute("allowfullscreen","")
         containerElement.appendChild(iframeElement);
     }
+    var kid = document.createElement("img");
+    kid.src = "img/kid.gif"
+    kid.id = "kid"
+    containerElement.appendChild(kid)
 }
 
 function cat(status){
