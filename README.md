@@ -22,7 +22,7 @@ This website was built with the intent to be hosted on GitHub Pages and pull the
 
 [font-awesome](https://fontawesome.com/v4/icons/) was used for the icons.
 
-## Bugs & Improvments
+## Bugs & Improvements
 
 - *lite-youtube* needs to double-click to play videos on mobile.
 - *lite-youtube* needs double-click to pause on desktop.
