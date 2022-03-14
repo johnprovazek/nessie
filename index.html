@@ -1,70 +1,47 @@
 <html>
 <head>
     <title>nessiethegreat</title>
-    <link rel="stylesheet" href="css/index.css">
-    <script src="js/index.js"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.3.1/lite-youtube.js"></script>
     <link rel='icon' href='img/favicon.ico?' type='image/x-icon'/ >
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/lite-yt-embed.css">
+    <script src="js/index.js"></script>
+    <script src="js/lite-yt-embed.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
 <body>
     <div class="grid-container-main">
-        <img class="noselect" id="main-band-logo" src="img/logo.svg">
-        <button id="about-button" class="main-button noselect" value="about" onclick="toggle(this)"><span class="main-button-text" style="display: block;">About</span><i class="main-button-icon fa fa-book" aria-hidden="true" style="display: none;"></i></button>
-        <button id="music-button" class="main-button noselect" value="music" onclick="toggle(this)"><span class="main-button-text" style="display: block;">Music</span><i class="main-button-icon fa fa-music" aria-hidden="true" style="display: none;"></i></button>
-        <button id="media-button" class="main-button noselect" value="media" onclick="toggle(this);resizeYoutube();"><span class="main-button-text" style="display: block;">Videos</span><i class="main-button-icon fa fa-youtube-play" aria-hidden="true" style="display: none;"></i></button>
-        <button id="contact-button" class="main-button noselect" value="contact" onclick="toggle(this)"><span class="main-button-text" style="display: block;">Links</span><i class="main-button-icon fa fa-link" aria-hidden="true" style="display: none;"></i></button>
-        <button id="shop-button" class="main-button noselect" value="shop" onclick="toggle(this)"><span class="main-button-text" style="display: block;">Shop</span><i class="main-button-icon fa fa-shopping-cart" aria-hidden="true" style="display: none;"></i></button>
+        <img class="noselect" id="main-band-logo" src="img/logo.svg" onclick="home()")>
+        <button id="about-button" class="main-button noselect" value="about" onclick="toggle(this)">
+            <span class="main-button-text" style="display: none;">About</span>
+            <i class="main-button-icon fa fa-book" aria-hidden="true" style="display: none;"></i>
+        </button>
+        <button id="music-button" class="main-button noselect" value="music" onclick="toggle(this)">
+            <span class="main-button-text" style="display: none;">Music</span>
+            <i class="main-button-icon fa fa-music" aria-hidden="true" style="display: none;"></i>
+        </button>
+        <button id="media-button" class="main-button noselect" value="media" onclick="toggle(this)">
+            <span class="main-button-text" style="display: none;">Videos</span>
+            <i class="main-button-icon fa fa-youtube-play" aria-hidden="true" style="display: none;"></i>
+        </button>
+        <button id="contact-button" class="main-button noselect" value="contact" onclick="toggle(this)">
+            <span class="main-button-text" style="display: none;">Links</span>
+            <i class="main-button-icon fa fa-at" aria-hidden="true" style="display: none;"></i>
+        </button>
+        <button id="shop-button" class="main-button noselect" value="shop" onclick="toggle(this)">
+            <span class="main-button-text" style="display: none;">Shop</span>
+            <i class="main-button-icon fa fa-shopping-cart" aria-hidden="true" style="display: none;"></i>
+        </button>
         <div id="about-content" class="content">
-            <div class="grid-container-about">
-                <div class="bold-title" id="about-title"><span class="fancy-title">About:</span></div>
-                <p id="about-paragraph"> 
-                The story begins in San Jose, California. Juan-Carlos Sandoval and Carson Lewis started playing music together in 2014 but were always deprived of a drummer. Eventually , they met drummer Nic Corona and started playing shows all over San Jose and the Bay Area. From 2016 up till 2019 the band was constantly playing shows wherever they could get booked. They became known for their reggae/rock sound and always had surprises in their live shows; you never knew when they would whip out a new and unexpected style. While blending genres, the bands backbone has always been reggae rock.  In 2020, just before the coronavirus pandemic hit, Nic Corona left the band. Early in the year 2021, Jettiny Ngo joined Nessie the Great as their new drummer. The band performed a few shows until an unfortunate turn of events required Juan Carlos to move to Texas for work. This however hasn't deterred the band and they are continuing to work on new music, sending tracks back and forth with each other, and releasing new songs. With their eyes set on success, they one day hope to hit the road and tour the world to spread that sweet reggae rock music to the globe. They have stated that their primary goals with this band is to "make people groove". Their latest single "All On You" is their most successful song to date and dropped on 10/1/2021
-                </p>
-                <div class="bold-title" id="about-band-members-title"><span class="fancy-title">Band Members:</span></div>
-                <img id="about-carson-pic" src="https://lh3.googleusercontent.com/Cb66ulZCqjnC6hSqPGd7n1pnFV1IfYb616-CiW-k9pt_i7XazXenIPiHF8iI9s_w_bhOs4dQITpSYzJ8LJXjpVxHYhPjGkF7jBh6p9nLV8DSY5_Rl-23VJeZoR5LEd21S8HTToCVc8Y=w200" width="100%">
-                <div id="about-carson-text">
-                    <div class="bold-title-sm"><span class="fancy-title-sm">Carson Lewis</span></div>
-                    <div class="general-text">
-                        Plays the guitar and is known to slay on the mic. He is also an
-                        accomplished basoon player and in his free time loves building minature
-                        sailboats for the community. 
-                    </div>
-                </div>
-                <img id="about-juan-pic" src="https://lh3.googleusercontent.com/psLcMqSWlENwv-FQROogqPuwvaW1K-XomBva-ANuQi_fOkpgZN9PQ6ytBNu2XjCk73nySe0J4jiqkS-4LdGJCzJlsDp_3NHu3mIgpyqqL8nud7pH5UdalRScX9oJPKqI1IxY8E670Vk=w200" width="100%">
-                <div id="about-juan-text">
-                    <div class="bold-title-sm"><span class="fancy-title-sm">Juan-Carlos Sandoval</span></div>
-                    <div class="general-text">
-                        Spiritual leader and group shamen. When he's not
-                        taking sips from his trusty canteen he's studying Ancient Greek.
-                        Ask him about his marble collection.
-                    </div>
-                </div>
-                <img id="about-jet-pic" src="https://lh3.googleusercontent.com/8wkX1LxFFdoNqS_MqELnypDFst1J-i0iwmulAeDVFK36GFYelS1epzdnaK81Ju0yXfceEh_UGtW7vQRoKmIfZw58xTna6rsq6-y6UaljsJAoKXrFa6RkOgvCOEU8ongYIZT5RetP_Zs=w200" width="100%">
-                <div id="about-jet-text">
-                    <div class="bold-title-sm"><span class="fancy-title-sm">Jettiny Ngo</span></div>
-                    <div class="general-text">
-                        Born with a drum stick in each one of his hands and has been banging
-                        on drums ever since. Not much else is known about the Jet. 
-                        He likes to keep it that way.
-                    </div>
-                </div>
+            <div id="about-container" class="grid-container-about">
+                <div class="bold-title" id="about-title">About:</div>
+                <p id="about-band-bio"></p>
+                <div class="bold-title" id="about-band-members-title">Band Members:</div>
             </div>
         </div>
         <div id="music-content" class="content">
-            <div id="test" class="grid-container-music">
-                <div class="bold-title"><span class="fancy-title">Music:</span></div>
-                <div class="bold-title-sm"><span class="fancy-title-sm">Friday (2021)</span></div>
-                <!-- <iframe src="https://open.spotify.com/embed/album/3vRi8ylCGoRxQKK1v5PWUr" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> -->
-                <div class="bold-title-sm"><span class="fancy-title-sm">All On You (2021)</span></div>
-                <!-- <iframe src="https://open.spotify.com/embed/album/2DGWuTWyZ9sheQFqqDnf0A" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> -->
-                <div class="bold-title-sm"><span class="fancy-title-sm">Midnight Rider (2020)</span></div>
-                <!-- <iframe src="https://open.spotify.com/embed/album/3VnGtT2DN2zFbVtrmJQPSa" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> -->
-                <div class="bold-title-sm"><span class="fancy-title-sm">Chasing the Sun (2019)</span></div>
-                <!-- <iframe src="https://open.spotify.com/embed/album/0GbnJ9TdOAFET46ukwtmYN" width="100%" height="452" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> -->
-                <div class="bold-title-sm"><span class="fancy-title-sm">License to Splash (2017)</span></div>
-                <!-- <iframe src="https://open.spotify.com/embed/album/6sxHlOXFoxnTgJAQCl1EMO" width="100%" height="235" frameborder="0"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> -->
+            <div id="music-container" class="grid-container-music">
+                <div class="bold-title">Music:</div>
             </div>
         </div>
         <div id="media-content" class="content">
@@ -74,45 +51,17 @@
             </div>
         </div>
         <div id="contact-content" class="content">
-            <div class="grid-container-contact">
-                <div class="bold-title"><span class="fancy-title">Links:</span></div>
-                <a class="contact-link" id="contact-spotify" href="https://open.spotify.com/artist/1wg0T50ugsycU3EyXm38ib">
-                    <div class="bold-title-sm"><i class="fa fa-spotify" aria-hidden="true"></i> Spotify</div>
-                </a>
-                <a class="contact-link" id="contact-youtube" href="https://www.youtube.com/channel/UC2r6coaUzbQOjzX0NOOkUgw/videos">
-                    <div class="bold-title-sm">Youtube <i class="fa fa-youtube" aria-hidden="true"></i></div>
-                </a>
-                <a class="contact-link" id="contact-apple" href="https://music.apple.com/us/artist/nessie-the-great/1204360863">
-                    <div class="bold-title-sm"><i class="fa fa-apple" aria-hidden="true"></i> Apple Music</div>
-                </a>
-                <a class="contact-link" id="contact-soundcloud" href="https://soundcloud.com/nessiethegreatofficial">
-                    <div class="bold-title-sm">Soundcloud <i class="fa fa-soundcloud" aria-hidden="true"></i></div>
-                </a>
-                <a class="contact-link" id="contact-instagram" href="https://www.instagram.com/nessiethegreatofficial/">
-                    <div class="bold-title-sm"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</div>
-                </a>
-                <a class="contact-link" id="contact-tiktok" href="https://www.tiktok.com/@nessiethegreat?lang=en">
-                    <div class="bold-title-sm">TikTok <i class="fa fa-vine" aria-hidden="true"></i></div>
-                </a>
-                <a class="contact-link" id="contact-twitch" href="https://www.twitch.tv/nessiethegreatofficial">
-                    <div class="bold-title-sm"><i class="fa fa-twitch" aria-hidden="true"></i> Twitch</div>
-                </a>
-                <a class="contact-link" id="contact-facebook" href="https://www.facebook.com/NessieTheGreatOfficial">
-                    <div class="bold-title-sm">Facebook <i class="fa fa-facebook-official" aria-hidden="true"></i></div>
-                </a>
-                <a class="contact-link" id="contact-twitter" href="https://twitter.com/NessieTheGreat_">
-                    <div class="bold-title-sm"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</div>
-                </a>
-                <a class="contact-link" id="contact-email" href="mailto: band@nessiethegreat.com">
-                    <div class="bold-title-sm"><i class="fa fa-envelope-o" aria-hidden="true"></i> Email</div>
-                </a>
+            <div id="contact-container" class="grid-container-contact">
+                <div class="bold-title">Links:</div>
             </div>
         </div>
         <div id="shop-content" class="content">
-            <div class="grid-container-shop">
-                <div class="bold-title"><span class="fancy-title">Shop:</span></div>
-                <div class="general-text">Check back later. We have no items for sale at this time.</div>
-                <img id="travolta" src="img/travolta.gif">
+            <div id="shop-container" class="grid-container-shop">
+                <div class="bold-title">Shop:</div>
+                <div class="general-text">Check back later. We don't have any items for sale at this time.</div>
+                <div id="travolta-container">
+                    <img id="travolta" src="img/travolta.gif">
+                </div>
             </div>
         </div>
     </div>

@@ -1,5 +1,8 @@
 {
     "bandvideos": [
+        "https://www.youtube.com/watch?v=yOpddlY7D10",
+        "https://www.youtube.com/watch?v=cLnWfbZe1pA",
+        "https://www.youtube.com/watch?v=CK_g9NUWmHc",
         "https://www.youtube.com/watch?v=WYWP9cwvXNk",
         "https://www.youtube.com/watch?v=os69ahINK_4",
         "https://www.youtube.com/watch?v=HD_4G4NnMM8",
@@ -15,7 +18,106 @@
         "https://lh3.googleusercontent.com/RHERdSI_tW46uHNI8tQQdJZjo-FvjcFqdgYcvxiP5vL7DCraxdM1Idz-19uQmGNIM7X0S9fNcUrjdknw8WJrSw0jPliiIxmn-hH_6WAvtGAKKDfQMMrL5OnjovLQTxF7VFp5v8tKvY8",
         "https://lh3.googleusercontent.com/DLJlJkbnUVU6q9BnvbhxLw7yoIqtC3fz3wA405juRd-7pgsp1sNw_TQBECbnclQCvLgJdrTMK13sqbeT5cXSp_c5EYHuuONh_TPoXN82Ul0ia6HJ_mnbQWbGTdSiLAKkLQKxXPDy-Wo"
     ],
-    "boolean": true,
+    "backgroundImage": "https://lh3.googleusercontent.com/I0FbSMNrV8U4Q-t6XzZWTJN5RrbmhXCwLJ0Z0tYGadtcj0PSEhoWR4RlUHqXG08EsMj0O8YjiQwhWydFfxIwMrjJpV7CShYZ7d0IML9JcNXm_-n-Aoy-p29AdFmNp4Dge3ncc5ZdEJg",
+    "links": [
+        {
+            "text": "Spotify",
+            "logo": "fa-spotify",
+            "link": "https://open.spotify.com/artist/1wg0T50ugsycU3EyXm38ib"
+        },
+        {
+            "text": "Youtube",
+            "logo": "fa-youtube",
+            "link": "https://www.youtube.com/channel/UC2r6coaUzbQOjzX0NOOkUgw/videos"
+        },        {
+            "text": "Apple Music",
+            "logo": "fa-apple",
+            "link": "https://music.apple.com/us/artist/nessie-the-great/1204360863"
+        },        {
+            "text": "Soundcloud",
+            "logo": "fa-soundcloud",
+            "link": "https://soundcloud.com/nessiethegreatofficial"
+        },        {
+            "text": "Instagram",
+            "logo": "fa-instagram",
+            "link": "https://www.instagram.com/nessiethegreatofficial/"
+        },        {
+            "text": "TikTok",
+            "logo": "fa-vine",
+            "link": "https://www.tiktok.com/@nessiethegreat?lang=en"
+        },        {
+            "text": "Twitch",
+            "logo": "fa-twitch",
+            "link": "https://www.twitch.tv/nessiethegreatofficial"
+        },        {
+            "text": "Facebook",
+            "logo": "fa-facebook-official",
+            "link": "https://www.facebook.com/NessieTheGreatOfficial"
+        },        {
+            "text": "Twitter",
+            "logo": "fa-twitter",
+            "link": "https://twitter.com/NessieTheGreat_"
+        },        {
+            "text": "Email",
+            "logo": "fa-envelope-o",
+            "link": "mailto: band@nessiethegreat.com"
+        }
+    ],
+    "bandbio": "The story begins in San Jose, California. Juan-Carlos Sandoval and Carson Lewis started playing music together in 2014 but were always deprived of a drummer. Eventually , they met drummer Nic Corona and started playing shows all over San Jose and the Bay Area. From 2016 up till 2019 the band was constantly playing shows wherever they could get booked. They became known for their reggae/rock sound and always had surprises in their live shows; you never knew when they would whip out a new and unexpected style. While blending genres, the bands backbone has always been reggae rock.  In 2020, just before the coronavirus pandemic hit, Nic Corona left the band. Early in the year 2021, Jettiny Ngo joined Nessie the Great as their new drummer. The band performed a few shows until an unfortunate turn of events required Juan Carlos to move to Texas for work. This however hasn't deterred the band and they are continuing to work on new music, sending tracks back and forth with each other, and releasing new songs. With their eyes set on success, they one day hope to hit the road and tour the world to spread that sweet reggae rock music to the globe. They have stated that their primary goals with this band is to \"make people groove\". Their latest single \"All On You\" is their most successful song to date and dropped on 10/1/2021",
+    "bandmembers": [
+        {
+            "name": "Carson Lewis",
+            "bio": "Plays the guitar and is known to slay on the mic. He is also an accomplished basoon player and in his free time loves building minature sailboats for the community.",
+            "picture": "https://lh3.googleusercontent.com/Cb66ulZCqjnC6hSqPGd7n1pnFV1IfYb616-CiW-k9pt_i7XazXenIPiHF8iI9s_w_bhOs4dQITpSYzJ8LJXjpVxHYhPjGkF7jBh6p9nLV8DSY5_Rl-23VJeZoR5LEd21S8HTToCVc8Y"
+        },
+        {
+            "name": "Juan-Carlos Sandoval",
+            "bio": "Spiritual leader and group shamen. When he's not taking sips from his trusty canteen he's studying Ancient Greek. Ask him about his marble collection.",
+            "picture": "https://lh3.googleusercontent.com/psLcMqSWlENwv-FQROogqPuwvaW1K-XomBva-ANuQi_fOkpgZN9PQ6ytBNu2XjCk73nySe0J4jiqkS-4LdGJCzJlsDp_3NHu3mIgpyqqL8nud7pH5UdalRScX9oJPKqI1IxY8E670Vk"
+        },
+        {
+            "name": "Jettiny Ngo",
+            "bio": "Born with a drum stick in each one of his hands and has been banging on drums ever since. Not much else is known about the Jet. He likes to keep it that way.",
+            "picture": "https://lh3.googleusercontent.com/8wkX1LxFFdoNqS_MqELnypDFst1J-i0iwmulAeDVFK36GFYelS1epzdnaK81Ju0yXfceEh_UGtW7vQRoKmIfZw58xTna6rsq6-y6UaljsJAoKXrFa6RkOgvCOEU8ongYIZT5RetP_Zs"
+        },
+        {
+            "name": "Mr. Miercoles",
+            "bio": "Band mascot. Doesn't like the sun.",
+            "picture": "img/cat.jpg"
+        }
+    ],
+    "spotifyalbums": [
+        {
+            "link": "https://open.spotify.com/album/3vRi8ylCGoRxQKK1v5PWUr?si=MHtku8s5RnGKVuHnXKGTjg",
+            "title": "Friday",
+            "year": "2021",
+            "tracks": "1"
+        },
+        {
+            "link": "https://open.spotify.com/album/2DGWuTWyZ9sheQFqqDnf0A?si=BpiEooS9Rd6QrzmdmZa7XA",
+            "title": "All On You",
+            "year": "2021",
+            "tracks": "1"
+        },
+        {
+            "link": "https://open.spotify.com/album/3VnGtT2DN2zFbVtrmJQPSa?si=8evOHuTLTsy6FQf98nyrUg",
+            "title": "Midnight Rider",
+            "year": "2020",
+            "tracks": "1"
+        },
+        {
+            "link": "https://open.spotify.com/album/0GbnJ9TdOAFET46ukwtmYN?si=odndzWouRD6X9c2wieiTlw",
+            "title": "Chasing the Sun",
+            "year": "2019",
+            "tracks": "12"
+        },
+        {
+            "link": "https://open.spotify.com/album/6sxHlOXFoxnTgJAQCl1EMO?si=wlUaZhq0Tjup7NnZXBugYw",
+            "title": "License to Splash",
+            "year": "2017",
+            "tracks": "5"
+        }
+    ],
     "color": "gold",
     "null": null,
     "number": 123,

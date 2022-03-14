@@ -1,27 +1,51 @@
 var json_data
 var screen_width
 var screen_height
+var cat_audio;
 window.addEventListener('load', function(event) {
     screen_width = screen.width
     screen_height = screen.height
+    cat_audio = new Audio('audio/cat.wav');
+    has_cat_played = false;
+    if(document.cookie == ""){
+        document.cookie = "true"
+    }
+    console.log(document.cookie)
+    setButtons()
     readTextFile("data/data.json", "null", function(text){
         json_data = JSON.parse(text);
+        addBackground()
+        addAbout()
+        addLinks()
         addBandVideos()
         addBandPhotos()
+        addSpotify()
     });
-    setIcons()
 });
 
 window.addEventListener('resize', function(event) {
     resizeYoutube()
 });
 
+function home(){
+    // Removing content
+    var items = document.getElementsByClassName("content");
+    for (var i = 0; i < items.length; i++) {
+        items[i].style.display = "none"
+    }
+    // Changing button color
+    var items = document.getElementsByClassName("main-button");
+    for (var i = 0; i < items.length; i++) {
+        items[i].style.backgroundColor = "white";
+    }
+}
+
 function toggle(el) {
     // Killing Spotify if necessary
-    if(document.getElementById("music-content").style.display == "block" && el.value != "music"){
-        spotifyKill()
-    }
-    // Changing content
+    // if(document.getElementById("music-content").style.display == "block" && el.value != "music"){
+    //     spotifyKill()
+    // }
+    // Removing content
     var items = document.getElementsByClassName("content");
     for (var i = 0; i < items.length; i++) {
         items[i].style.display = "none"
@@ -37,44 +61,32 @@ function toggle(el) {
     toggledbutton.style.backgroundColor = "#FDBA21";
 }
 
-function resizeYoutube() {
-    // var items = document.getElementsByClassName("youtube");
-    // for (var i = 0; i < items.length; i++) {
-    //     // console.log(items[i].clientWidth)
-    //     var resize = (items[i].getAttribute("data-aspect-height")/items[i].getAttribute("data-aspect-width")) * items[i].clientWidth
-    //     items[i].style.height = resize
-    // }
-}
-
-
 // Work around to kill spotify player when moving to another tab
 function spotifyKill(){
-    var container = document.getElementById("test");
-    for (var i = container.children.length - 1; i > -1; i--) {
-        container.removeChild(container.children[i]);
+    var containerElement = document.getElementById("music-container");
+    for (var i = containerElement.children.length - 1; i > -1; i--) {
+        containerElement.removeChild(containerElement.children[i]);
     }
-    document.getElementById('test').innerHTML = `<div class="bold-title"><span class="fancy-title">Music:</span></div>
-    <div class="bold-title-sm"><span class="fancy-title-sm">Friday (2021)</span></div>
-    <iframe src="https://open.spotify.com/embed/album/3vRi8ylCGoRxQKK1v5PWUr" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    <div class="bold-title-sm"><span class="fancy-title-sm">All On You (2021)</span></div>
-    <iframe src="https://open.spotify.com/embed/album/2DGWuTWyZ9sheQFqqDnf0A" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    <div class="bold-title-sm"><span class="fancy-title-sm">Midnight Rider (2020)</span></div>
-    <iframe src="https://open.spotify.com/embed/album/3VnGtT2DN2zFbVtrmJQPSa" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    <div class="bold-title-sm"><span class="fancy-title-sm">Chasing the Sun (2019)</span></div>
-    <iframe src="https://open.spotify.com/embed/album/0GbnJ9TdOAFET46ukwtmYN" width="100%" height="452" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    <div class="bold-title-sm"><span class="fancy-title-sm">License to Splash (2017)</span></div>
-    <iframe src="https://open.spotify.com/embed/album/6sxHlOXFoxnTgJAQCl1EMO" width="100%" height="235" frameborder="0"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>`;
+    var titleElement = document.createElement("div");
+    titleElement.classList.add("bold-title-sm");
+    var titleElementText = document.createTextNode("Music:");
+    titleElement.appendChild(titleElementText);
+    containerElement.appendChild(titleElement);
+    addSpotify()
 }
 
-function setIcons(){
+// Sets main buttons to icons if mobile and to text if desktop
+function setButtons(){
     if(isMobileDevice()){
         var icons = document.getElementsByClassName("main-button-icon");
         for (var i = 0; i < icons.length; i++) {
             icons[i].style.display = "block";
         }
+    }
+    else{
         var texts = document.getElementsByClassName("main-button-text");
         for (var i = 0; i < texts.length; i++) {
-            texts[i].style.display = "none";
+            texts[i].style.display = "block";
         }
     }
 }
@@ -98,8 +110,19 @@ function readTextFile(file, link_code, callback) {
     rawFile.send(null);
 }
 
-// Adds youtube videos to the DOM from data.json
-// Calls youtube endpoint to get video title
+
+// Sets the main body background
+function addBackground(){
+    var max_width = screen_width
+    if(screen_height > screen_width){
+        max_width = Math.ceil(screen_height * (3/2))
+    }
+    document.body.style.backgroundImage = "url(\"" + json_data["backgroundImage"]  + "=w" + max_width + "\")";
+}
+
+// Adds youtube videos to the DOM from links in data.json
+// Calls youtube endpoint to get json with video title
+// Utilizing https://github.com/paulirish/lite-youtube-embed for faster youtube elements
 function addBandVideos(){
     for (var i = 0; i < json_data["bandvideos"].length; i++){
         var link = json_data["bandvideos"][i]
@@ -112,6 +135,7 @@ function addBandVideos(){
         youtubeContainer.appendChild(title);
         var liteYoutube = document.createElement("lite-youtube");
         liteYoutube.setAttribute("videoid", link_code);
+        // liteYoutube.setAttribute("params","autoplay=0")
         youtubeContainer.appendChild(liteYoutube);
         var bandVideosTitle = document.getElementById("media-band-videos")
         bandVideosTitle.parentNode.insertBefore(youtubeContainer, bandVideosTitle);
@@ -124,18 +148,166 @@ function addBandVideos(){
     }
 }
 
+// Adds band pictures to the DOM from links in data.json
+// Built assuming Google Photos links were provided
 function addBandPhotos(){
-    var max_width = Math.ceil(screen_width*.40)
+    var max_width = 1000
+    var desktop_max = Math.ceil(screen_width*.45)
+    if(desktop_max > max_width){
+        max_width = desktop_max
+    }
     for (var i = 0; i < json_data["bandphotos"].length; i++){
         var link = json_data["bandphotos"][i]
-        // <img id="bandpic1" src="https://lh3.googleusercontent.com/8zJzgI_GPx5K-tujHueo54AF2Yhu1HYpcQT0pVhx-s4fHAueZRWjlm8whQ7wm95zwWVm36pQYxpuUymwhpqW65xBcQv8R8k8DLZNY9oLSd6gZGskeHTITvoBZX0ysKcLZTPB_kbicU4=w200" width="100%">
-        // <img id="bandpic2" src="https://lh3.googleusercontent.com/RHERdSI_tW46uHNI8tQQdJZjo-FvjcFqdgYcvxiP5vL7DCraxdM1Idz-19uQmGNIM7X0S9fNcUrjdknw8WJrSw0jPliiIxmn-hH_6WAvtGAKKDfQMMrL5OnjovLQTxF7VFp5v8tKvY8=w200" width="100%">
-        // <img id="bandpic3" src="https://lh3.googleusercontent.com/DLJlJkbnUVU6q9BnvbhxLw7yoIqtC3fz3wA405juRd-7pgsp1sNw_TQBECbnclQCvLgJdrTMK13sqbeT5cXSp_c5EYHuuONh_TPoXN82Ul0ia6HJ_mnbQWbGTdSiLAKkLQKxXPDy-Wo=w200" width="100%">
         var imgElement = document.createElement("img");
         imgElement.id = "bandpic" + i
         imgElement.style.width = "100%"
         imgElement.src = link + "=w" + max_width
         var parent = document.getElementById("media-container")
         parent.appendChild(imgElement);
+    }
+}
+
+// Adds social links to the DOM from data.json
+function addLinks(){
+    for (var i = 0; i < json_data["links"].length; i++){
+        var containerElement = document.getElementById("contact-container")
+        var aElement = document.createElement("a");
+        aElement.setAttribute("href",json_data["links"][i]["link"])
+        var divElement = document.createElement("div");
+        divElement.classList.add("bold-title-sm");
+        var iElement = document.createElement("i");
+        iElement.classList.add("fa", json_data["links"][i]["logo"]);
+        var textElement;
+        if(i % 2 == 0) {
+            aElement.classList.add("contact-link", "contact-even")
+            textElement = document.createTextNode(" " + json_data["links"][i]["text"]);
+            divElement.appendChild(iElement);
+            divElement.appendChild(textElement);
+        }
+        else{
+            aElement.classList.add("contact-link", "contact-odd")
+            textElement = document.createTextNode(json_data["links"][i]["text"] + " ");
+            divElement.appendChild(textElement);
+            divElement.appendChild(iElement);
+        }
+        aElement.appendChild(divElement)
+        containerElement.appendChild(aElement)
+    }
+}
+
+// Adds about content to the DOM from data.json
+function addAbout(){
+    var max_width = 1000
+    var desktop_max = Math.ceil(screen_width*.45*.35)
+    if(desktop_max > max_width){
+        max_width = desktop_max
+    }
+    var bandBioElement = document.getElementById("about-band-bio")
+    var textElement = document.createTextNode(json_data["bandbio"]);
+    bandBioElement.appendChild(textElement)
+    var numBandMembers = json_data["bandmembers"].length
+    var r = document.querySelector(':root');
+    r.style.setProperty('--numBandMembers', numBandMembers);
+    var containerElement = document.getElementById("about-container")
+    for (var i = 0; i < json_data["bandmembers"].length; i++){
+        var bandMemberText = document.createElement("div");
+        // bandMemberText.classList.add("about-band-member-text");
+        var bandMemberName = document.createElement("div");
+        bandMemberName.classList.add("bold-title-sm");
+        var bandMemberNameText = document.createTextNode(json_data["bandmembers"][i]["name"]);
+        bandMemberName.appendChild(bandMemberNameText);
+        bandMemberText.appendChild(bandMemberName)
+        var bandMemberBio = document.createElement("div");
+        bandMemberBio.classList.add("general-text");
+        var bandMemberBioText = document.createTextNode(json_data["bandmembers"][i]["bio"]);
+        bandMemberBio.appendChild(bandMemberBioText);
+        bandMemberText.appendChild(bandMemberBio);
+        var bandMemberImage = document.createElement("img");
+        if(json_data["bandmembers"][i]["picture"] != "img/cat.jpg"){
+            bandMemberImage.src = json_data["bandmembers"][i]["picture"] + "=w" + max_width
+        }
+        else{
+            bandMemberImage.src = json_data["bandmembers"][i]["picture"]
+            bandMemberImage.id ="cat"
+            bandMemberImage.setAttribute("onmouseover","cat('in')")
+            bandMemberImage.setAttribute("onmouseout","cat('out')")
+
+        }
+        if(i % 2 == 0) {
+            bandMemberText.classList.add("about-band-member-text-even");
+            bandMemberImage.classList.add("about-band-member-picture-even");
+            containerElement.appendChild(bandMemberText);
+            containerElement.appendChild(bandMemberImage);
+        }
+        else{
+            bandMemberText.classList.add("about-band-member-text-odd");
+            bandMemberImage.classList.add("about-band-member-picture-odd");
+            containerElement.appendChild(bandMemberImage);
+            containerElement.appendChild(bandMemberText);
+        }
+    }
+
+
+
+    // <div class="about-band-member-text">
+    //     <div class="bold-title-sm">Carson Lewis</div>
+    //     <div class="general-text">Plays the guitar and is known to slay on the mic. He is also an accomplished basoon player and in his free time loves building minature sailboats for the community.</div>
+    // </div>
+    // <img class="about-band-member-picture" src="https://lh3.googleusercontent.com/Cb66ulZCqjnC6hSqPGd7n1pnFV1IfYb616-CiW-k9pt_i7XazXenIPiHF8iI9s_w_bhOs4dQITpSYzJ8LJXjpVxHYhPjGkF7jBh6p9nLV8DSY5_Rl-23VJeZoR5LEd21S8HTToCVc8Y=w1000">
+    // <img class="about-band-member-picture-odd" src="https://lh3.googleusercontent.com/psLcMqSWlENwv-FQROogqPuwvaW1K-XomBva-ANuQi_fOkpgZN9PQ6ytBNu2XjCk73nySe0J4jiqkS-4LdGJCzJlsDp_3NHu3mIgpyqqL8nud7pH5UdalRScX9oJPKqI1IxY8E670Vk=w1000">
+    // <div class="about-band-member-text-odd">
+    //     <div class="bold-title-sm">Juan-Carlos Sandoval</div>
+    //     <div class="general-text">Spiritual leader and group shamen. When he's not taking sips from his trusty canteen he's studying Ancient Greek. Ask him about his marble collection.</div>
+    // </div>
+    // <div class="about-band-member-text">
+    //     <div class="bold-title-sm">Jettiny Ngo</div>
+    //     <div class="general-text">Born with a drum stick in each one of his hands and has been banging on drums ever since. Not much else is known about the Jet. He likes to keep it that way.</div>
+    // </div>
+    // <img class="about-band-member-picture" src="https://lh3.googleusercontent.com/8wkX1LxFFdoNqS_MqELnypDFst1J-i0iwmulAeDVFK36GFYelS1epzdnaK81Ju0yXfceEh_UGtW7vQRoKmIfZw58xTna6rsq6-y6UaljsJAoKXrFa6RkOgvCOEU8ongYIZT5RetP_Zs=w1000">
+}
+
+// Adds spotify albums to the DOM
+// Assumes link is in the one of the following formats:
+// https://open.spotify.com/album/6sxHlOXFoxnTgJAQCl1EMO?si=wlUaZhq0Tjup7NnZXBugYw
+// https://open.spotify.com/album/6sxHlOXFoxnTgJAQCl1EMO
+function addSpotify(){
+    var containerElement = document.getElementById("music-container")
+    for (var i = 0; i < json_data["spotifyalbums"].length; i++){
+        var url = json_data["spotifyalbums"][i]["link"].split("?")[0]
+        var code = url.substring(url.length - 22);
+        var albumTitle = document.createElement("div");
+        albumTitle.classList.add("bold-title-sm");
+        var albumTitleText = document.createTextNode(json_data["spotifyalbums"][i]["title"] + " (" + json_data["spotifyalbums"][i]["year"] + ")");
+        albumTitle.appendChild(albumTitleText);
+        containerElement.appendChild(albumTitle);
+        var iframeElement = document.createElement("iframe");
+        iframeElement.src = "https://open.spotify.com/embed/album/" + code
+        iframeElement.style.width="100%"
+        var numTracks = parseInt(json_data["spotifyalbums"][i]["tracks"])
+        if(numTracks == 1){
+            iframeElement.style.height=80
+        }
+        else{
+            iframeElement.style.height=80+numTracks*31
+        }
+        iframeElement.setAttribute("frameBorder","0")
+        iframeElement.setAttribute("allow","autoplay;clipboard-write;encrypted-media;fullscreen;picture-in-picture")
+        iframeElement.setAttribute("allowfullscreen","")
+        containerElement.appendChild(iframeElement);
+    }
+}
+
+function cat(status){
+    console.log(document.cookie)
+    var cat = document.getElementById("cat")
+    navigator.clipboard.writeText("Mr. Miercoles strikes again");
+    if(status == "in" && document.cookie == "true"){
+        document.cookie = "false"
+        cat.src = "img/cat.gif"
+        cat_audio.play();
+    }
+    if(status == "out"){
+        cat.src = "img/cat.jpg"
+        cat_audio.pause();
     }
 }
