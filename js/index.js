@@ -13,18 +13,18 @@ window.addEventListener('load', function(event) {
     setButtons()
     readTextFile("data/data.json", "null", function(text){
         json_data = JSON.parse(text);
-        addBackground()
-        addAbout()
-        addLinks()
-        addBandVideos()
-        addBandPhotos()
-        addSpotify()
+        addBackground();
+        addAbout();
+        addLinks();
+        addBandVideos();
+        addBandPhotos();
+        addSpotify();
     });
     handleDirectLink();
 });
 
 window.addEventListener('resize', function(event) {
-    resizeYoutube()
+    // resizeYoutube()
 });
 
 function home(){
@@ -147,7 +147,8 @@ function addBackground(){
     if(screen_height > screen_width){
         max_width = Math.ceil(screen_height * (3/2))
     }
-    document.body.style.backgroundImage = "url(\"" + json_data["backgroundImage"]  + "=w" + max_width + "\")" ;
+    document.getElementById("background-layer").style.backgroundImage = "url(\"" + json_data["backgroundImage"]  + "=w" + max_width + "\")" ;
+    document.getElementById("background-layer").style.opacity = 1;
 }
 
 // Adds youtube videos to the DOM from links in data.json
@@ -317,7 +318,6 @@ function addSpotify(){
 }
 
 function cat(status){
-    console.log(document.cookie)
     var cat = document.getElementById("cat")
     navigator.clipboard.writeText("Mr. Miercoles strikes again");
     if(status == "in" && document.cookie == "true"){

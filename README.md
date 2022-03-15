@@ -31,7 +31,6 @@ This website was built with the intent to be hosted on GitHub Pages and pull the
 - Pause YouTube video playback when switching to another section.
 - Pause Spotify player playback when another Spotify player is played.
 - Pause Spotify player playback when switching to another section.
-- Fade in background once image is loaded
 - Only tested on Google Pixel 3 and Windows 10 PC with (2560 × 1440) monitor running Chrome versions 99+. Needs thorough testing with different devices, screens, and browsers.
 
 ## License
