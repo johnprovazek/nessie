@@ -15,6 +15,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    /* background-image: url(../img/test.gif); */
     font-family: Courier, Monospace;
     font-size: 18px;
     margin: 0%;
@@ -122,6 +123,9 @@ body {
 
 .about-band-member-text-even {
     grid-column: 1 / span 2;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -137,6 +141,9 @@ body {
 
 .about-band-member-text-odd {
     grid-column: 2 / span 3;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -149,6 +156,10 @@ body {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
+/* .band-member-bio{
+    width
+} */
 
 /*
 *                      _                   _     _ 
@@ -282,6 +293,12 @@ body {
 * |_| |_| |_|\___|\__,_|_|\__,_|  \__, |\__,_|\___|_|  |_|\___||___/
 *                                    |_|                            
 */
+
+@media (min-width:1751px){
+    .about-band-member-text-odd, .about-band-member-text-even {
+        width:75%;
+    }
+}
 
 @media (min-width: 800px) and (max-width: 1072px){
     .grid-container-main {

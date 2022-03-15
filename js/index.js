@@ -20,6 +20,7 @@ window.addEventListener('load', function(event) {
         addBandPhotos()
         addSpotify()
     });
+    handleDirectLink();
 });
 
 window.addEventListener('resize', function(event) {
@@ -36,6 +37,32 @@ function home(){
     var items = document.getElementsByClassName("main-button");
     for (var i = 0; i < items.length; i++) {
         items[i].style.backgroundColor = "white";
+    }
+}
+
+function handleDirectLink(){
+    if(location.toString().split("#")[1]){
+        var url = location.toString().split("#")[1].toLowerCase();
+    }
+    if(url == "about"){
+        var element = document.getElementById("about-button")
+        toggle(element)
+    }
+    else if(url == "music"){
+        var element = document.getElementById("music-button")
+        toggle(element)
+    }
+    else if(url == "videos"){
+        var element = document.getElementById("videos-button")
+        toggle(element)
+    }
+    else if(url == "links"){
+        var element = document.getElementById("links-button")
+        toggle(element)
+    }
+    else if(url == "shop"){
+        var element = document.getElementById("shop-button")
+        toggle(element)
     }
 }
 
@@ -120,7 +147,7 @@ function addBackground(){
     if(screen_height > screen_width){
         max_width = Math.ceil(screen_height * (3/2))
     }
-    document.body.style.backgroundImage = "url(\"" + json_data["backgroundImage"]  + "=w" + max_width + "\")";
+    document.body.style.backgroundImage = "url(\"" + json_data["backgroundImage"]  + "=w" + max_width + "\")" ;
 }
 
 // Adds youtube videos to the DOM from links in data.json
@@ -224,7 +251,7 @@ function addAbout(){
         bandMemberName.appendChild(bandMemberNameText);
         bandMemberText.appendChild(bandMemberName)
         var bandMemberBio = document.createElement("div");
-        bandMemberBio.classList.add("general-text");
+        bandMemberBio.classList.add("general-text","band-member-bio");
         var bandMemberBioText = document.createTextNode(json_data["bandmembers"][i]["bio"]);
         bandMemberBio.appendChild(bandMemberBioText);
         bandMemberText.appendChild(bandMemberBio);
