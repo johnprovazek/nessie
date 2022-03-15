@@ -26,7 +26,7 @@ This website was built with the intent to be hosted on GitHub Pages and pull the
 
 - *lite-youtube* needs to double-click to play videos on mobile.
 - *lite-youtube* needs double-click to pause on desktop.
-- *lite-youtube* thumbnails get blurry on a big screen, blur them at a certain point.
+- *lite-youtube* thumbnails get pixelated on a big screen, blur them at a certain point.
 - Pause YouTube video playback when another YouTube video is played.
 - Pause YouTube video playback when switching to another section.
 - Pause Spotify player playback when another Spotify player is played.
