@@ -2,7 +2,7 @@
 
 ## Description
 
-The inspiration behind this project was to build a simple website for my friend’s band Nessie the Great. You can access this website at [nessiethegreat.com](https://www.nessiethegreat.com).
+The inspiration behind this project was to build a simple website for my friend’s band *Nessie the Great*. You can access this website at [nessiethegreat.com](https://www.nessiethegreat.com).
 
 Built using vanilla JavaScript.
 
@@ -24,15 +24,10 @@ This website was built with the intent to be hosted on GitHub Pages and pull the
 
 ## Bugs & Improvements
 
-- *lite-youtube* needs to double-click to play videos on mobile.
-- *lite-youtube* needs double-click to pause on desktop.
-- *lite-youtube* thumbnails get pixelated on a big screen, blur them at a certain point.
-- Pause YouTube video playback when another YouTube video is played.
-- Pause YouTube video playback when switching to another section.
-- Pause Spotify player playback when another Spotify player is played.
-- Pause Spotify player playback when switching to another section.
-- Only tested on Google Pixel 3 and Windows 10 PC with (2560 × 1440) monitor running Chrome versions 99+. Needs thorough testing with different devices, screens, and browsers.
-
-## License
-
-No License for now until I have a better understanding of this. Would like this to be free for non commercial use.
+- Website takes too long to load. Page waits for everything to load. Need to run onload functions asynchronously.
+- *lite-youtube* needs to double-click to play and pause in certain scenarios. Look into alternative fast Youtube player options.
+- *lite-youtube* thumbnails get pixelated on a bigger screen, blur them at a certain point.
+- Youtube videos are able to play over other YouTube videos.
+- Youtube videos continue to play after switching to another section.
+- Spotify players are able to play over other Spotify players when user is not connected with Spotify.
+- Spotify players continue to play after switching to another section. 
