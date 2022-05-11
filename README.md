@@ -31,6 +31,7 @@ This website was built with the intent to be hosted on GitHub Pages and pull the
 - Youtube videos continue to play after switching to another section.
 - Spotify players are able to play over other Spotify players when user is not connected with Spotify.
 - Spotify players continue to play after switching to another section.
+- Use a linter and a style guide
 
 ## Device Tests
 
