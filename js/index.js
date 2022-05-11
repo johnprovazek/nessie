@@ -142,7 +142,7 @@ function readTextFile(file, link_code, callback) {
 
 
 // Sets the main body background
-function addBackground(){
+async function addBackground(){
     var max_width = screen_width
     if(screen_height > screen_width){
         max_width = Math.ceil(screen_height * (3/2))
@@ -154,7 +154,7 @@ function addBackground(){
 // Adds youtube videos to the DOM from links in data.json
 // Calls youtube endpoint to get json with video title
 // Utilizing https://github.com/paulirish/lite-youtube-embed for faster youtube elements
-function addBandVideos(){
+async function addBandVideos(){
     for (var i = 0; i < json_data["bandvideos"].length; i++){
         var link = json_data["bandvideos"][i]
         var link_code = link.substring(link.length - 11)
@@ -181,7 +181,7 @@ function addBandVideos(){
 
 // Adds band pictures to the DOM from links in data.json
 // Built assuming Google Photos links were provided
-function addBandPhotos(){
+async function addBandPhotos(){
     var max_width = 1000
     var desktop_max = Math.ceil(screen_width*.45)
     if(desktop_max > max_width){
@@ -199,7 +199,7 @@ function addBandPhotos(){
 }
 
 // Adds social links to the DOM from data.json
-function addLinks(){
+async function addLinks(){
     var containerElement = document.getElementById("links-container")
     for (var i = 0; i < json_data["links"].length; i++){
         var aElement = document.createElement("a");
@@ -231,7 +231,7 @@ function addLinks(){
 }
 
 // Adds about content to the DOM from data.json
-function addAbout(){
+async function addAbout(){
     var max_width = 1000
     var desktop_max = Math.ceil(screen_width*.45*.35)
     if(desktop_max > max_width){
@@ -286,7 +286,7 @@ function addAbout(){
 // Assumes link is in the one of the following formats:
 // https://open.spotify.com/album/6sxHlOXFoxnTgJAQCl1EMO?si=wlUaZhq0Tjup7NnZXBugYw
 // https://open.spotify.com/album/6sxHlOXFoxnTgJAQCl1EMO
-function addSpotify(){
+async function addSpotify(){
     var containerElement = document.getElementById("music-container")
     for (var i = 0; i < json_data["spotifyalbums"].length; i++){
         var url = json_data["spotifyalbums"][i]["link"].split("?")[0]
