@@ -24,7 +24,7 @@ This website was built with the intent to be hosted on GitHub Pages and pull the
 
 ## Bugs & Improvements
 
-- Website takes too long to load. Page waits for everything to load. Need to run onload functions asynchronously.
+- Website background could load a little faster/smoother.
 - *lite-youtube* needs to double-click to play and pause in certain scenarios. Look into alternative fast Youtube player options.
 - *lite-youtube* thumbnails get pixelated on a bigger screen, blur them at a certain point.
 - Youtube videos are able to play over other YouTube videos.
@@ -36,9 +36,9 @@ This website was built with the intent to be hosted on GitHub Pages and pull the
 
 | Device                  | Browser       | Viewport Width | Viewport Height | Screen Width | Screen Height | DPR  | Default View | Alt View                         | Notes                                                |
 |-------------------------|---------------|----------------|-----------------|--------------|---------------|------|--------------|----------------------------------|------------------------------------------------------|
-| Windows 10              | Chrome 101    | 2560           | 1329            | 2560         | 1440          | 1.00 | 5/1/2022     | null                             |                                                      |
-| Windows 10              | Edge 101      | 2560           | 1329            | 2560         | 2560          | 1.00 | 5/1/2022     | null                             |                                                      |
-| Windows 10              | Firefox 99    | 2560           | 1315            | 2560         | 2560          | 1.00 | 5/1/2022     | null                             |                                                      |
-| iPad Pro 11inch 3rd Gen | Safari iOS 15 | 834            | 1075            | 834          | 1194          | 2.00 | 5/1/2022     | 5/1/2022                         |                                                      |
-| iPad Pro 11inch 3rd Gen | Chrome 101    | 834            | 1087            | 834          | 1194          | 2.00 | 5/1/2022     | 5/1/2022                         |                                                      |
-| Pixel 3                 | Chrome 101    | 393            | 654             | 393          | 786           | 2.75 | 5/1/2022     | 5/1/2022                         |                                                      |
+| Windows 10              | Chrome 101    | 2560           | 1329            | 2560         | 1440          | 1.00 | 5/11/2022     | null                            |                                                      |
+| Windows 10              | Edge 101      | 2560           | 1329            | 2560         | 2560          | 1.00 | 5/11/2022     | null                            |                                                      |
+| Windows 10              | Firefox 99    | 2560           | 1315            | 2560         | 2560          | 1.00 | 5/11/2022     | null                            |                                                      |
+| iPad Pro 11inch 3rd Gen | Safari iOS 15 | 834            | 1075            | 834          | 1194          | 2.00 | 5/11/2022     | 5/11/2022                       |                                                      |
+| iPad Pro 11inch 3rd Gen | Chrome 101    | 834            | 1087            | 834          | 1194          | 2.00 | 5/11/2022     | 5/11/2022                       |                                                      |
+| Pixel 3                 | Chrome 101    | 393            | 654             | 393          | 786           | 2.75 | 5/11/2022     | 5/11/2022                       |                                                      |
