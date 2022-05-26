@@ -68,6 +68,10 @@ body {
     border-color: black;
 }
 
+.main-button:hover {
+    cursor: pointer;
+}
+
 .main-button-icon, .main-button-text, .main-button{
     display: none;
     color: black;
