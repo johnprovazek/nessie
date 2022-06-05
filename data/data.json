@@ -83,6 +83,12 @@
     ],
     "spotifyalbums": [
         {
+            "link": "https://open.spotify.com/album/2NNajtdRJAnyx2TEXcS9GG?si=iPlEpNXpQz-NhV0K8-AtIA",
+            "title": "M L K",
+            "year": "2022",
+            "tracks": "1"
+        },
+        {
             "link": "https://open.spotify.com/album/3vRi8ylCGoRxQKK1v5PWUr?si=MHtku8s5RnGKVuHnXKGTjg",
             "title": "Friday",
             "year": "2021",
