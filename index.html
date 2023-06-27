@@ -1,5 +1,5 @@
 <html>
-<head>
+  <head>
     <title>nessiethegreat</title>
     <link rel='icon' href='img/favicon.ico?' type='image/x-icon'/ >
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -8,61 +8,58 @@
     <link rel="stylesheet" href="css/lite-yt-embed.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/audioplayer.css">
+  </head>
+  <body>
     <div id="background-layer"></div>
     <div class="grid-container-main">
-        <img class="noselect" id="main-band-logo" src="img/logo.svg" onclick="home()">
-        <button id="about-button" class="main-button noselect" value="about" onclick="toggle(this)">
-            <span class="main-button-text">About</span>
-            <i class="main-button-icon fa fa-book"></i>
-        </button>
-        <button id="music-button" class="main-button noselect" value="music" onclick="toggle(this)">
-            <span class="main-button-text">Music</span>
-            <i class="main-button-icon fa fa-music"></i>
-        </button>
-        <button id="videos-button" class="main-button noselect" value="videos" onclick="toggle(this)">
-            <span class="main-button-text">Videos</span>
-            <i class="main-button-icon fa fa-youtube-play"></i>
-        </button>
-        <button id="links-button" class="main-button noselect" value="links" onclick="toggle(this)">
-            <span class="main-button-text">Links</span>
-            <i class="main-button-icon fa fa-at"></i>
-        </button>
-        <button id="shop-button" class="main-button noselect" value="shop" onclick="toggle(this)">
-            <span class="main-button-text">Shop</span>
-            <i class="main-button-icon fa fa-shopping-cart"></i>
-        </button>
-        <div id="about-content" class="content">
-            <div id="about-container" class="grid-container-about">
-                <div class="bold-title" id="about-title">About:</div>
-                <p id="about-band-bio"></p>
-                <div class="bold-title" id="about-band-members-title">Band Members:</div>
-            </div>
+      <img id="main-band-logo" src="img/logo.svg" onclick="home()">
+      <button id="about-button" class="main-button" onclick="toggle('about')">
+        <span class="main-button-text">About</span>
+        <i class="main-button-icon fa fa-book"></i>
+      </button>
+      <button id="music-button" class="main-button" onclick="toggle('music')">
+        <span class="main-button-text">Music</span>
+        <i class="main-button-icon fa fa-music"></i>
+      </button>
+      <button id="videos-button" class="main-button" onclick="toggle('videos')">
+        <span class="main-button-text">Videos</span>
+        <i class="main-button-icon fa fa-youtube-play"></i>
+      </button>
+      <button id="photos-button" class="main-button" onclick="toggle('photos')">
+        <span class="main-button-text">Photos</span>
+        <i class="main-button-icon fa fa-camera"></i>
+      </button>
+      <button id="links-button" class="main-button" onclick="toggle('links')">
+        <span class="main-button-text">Links</span>
+        <i class="main-button-icon fa fa-at"></i>
+      </button>
+      <div id="about-content" class="content">
+        <div id="about-container">
+          <div id="about-title" class="bold-title">About:</div>
         </div>
-        <div id="music-content" class="content">
-            <div id="music-container" class="grid-container-music">
-                <div class="bold-title">Music:</div>
-            </div>
+      </div>
+      <div id="music-content" class="content">
+        <div id="music-container">
+          <div id="music-title" class="bold-title">Music:</div>
         </div>
-        <div id="videos-content" class="content">
-            <div id="videos-container" class="grid-container-videos">
-                <div class="bold-title" id="band-videos">Band Videos:</div>
-                <div class="bold-title" id="band-pictures">Band Pictures:</div>
-            </div>
+      </div>
+      <div id="videos-content" class="content">
+        <div id="videos-container">
+          <div id="videos-title" class="bold-title">Videos:</div>
         </div>
-        <div id="links-content" class="content">
-            <div id="links-container" class="grid-container-links">
-                <div class="bold-title">Links:</div>
-            </div>
+      </div>
+      <div id="photos-content" class="content">
+        <div id="photos-container">
+          <div id="pictures-title" class="bold-title">Pictures:</div>
         </div>
-        <div id="shop-content" class="content">
-            <div id="shop-container" class="grid-container-shop">
-                <div class="bold-title">Shop:</div>
-                <div class="general-text">Check back later. We don't have any items for sale at this time.</div>
-                <img id="travolta" src="img/travolta.gif">
-            </div>
+      </div>
+      <div id="links-content" class="content">
+        <div id="links-container">
+          <div id="links-title" class="bold-title">Links:</div>
         </div>
+      </div>
     </div>
-</body>
+    <script src="js/audioplayer.js"></script>
+  </body>
 </html>

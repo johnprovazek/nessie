@@ -16,19 +16,16 @@ This website was built with the intent to be hosted on GitHub Pages and pull the
 
 ## Credits
 
-[lite-youtube](https://github.com/paulirish/lite-youtube-embed) was used for faster YouTube loading.
-
-[spotify-embed-widgets](https://developer.spotify.com/documentation/widgets/generate/embed/) were used to embed the Spotify albums.
+[lite-youtube](https://github.com/paulirish/lite-youtube-embed) was used for faster YouTube player loading.
 
 [font-awesome](https://fontawesome.com/v4/icons/) was used for the icons.
 
+[Let’s Create a Custom Audio Player](https://css-tricks.com/lets-create-a-custom-audio-player/) is a guide I followed to setup custom audio players.
+
+
 ## Bugs & Improvements
 
-- Website background could load a little faster/smoother.
-- *lite-youtube* needs to double-click to play and pause in certain scenarios. Look into alternative fast Youtube player options.
-- *lite-youtube* thumbnails are now pulling only the HD thumbnails. Need to update that in Youtube.
-- Youtube videos are able to play over other YouTube videos.
-- Youtube videos continue to play after switching to another section.
-- Spotify players are able to play over other Spotify players when user is not connected with Spotify.
-- Spotify players continue to play after switching to another section.
+- Recreate the band logo to remove css border hack.
+- Add anchor gifs to each page.
+- Consider either converting the audio player to a web component or rewriting website as a react or angular application.
 - Use a linter and a style guide.

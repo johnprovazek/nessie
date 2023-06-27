@@ -1,124 +1,319 @@
 {
   "bandvideos": [
-      "https://www.youtube.com/watch?v=J_1qp3EZqdE",
-      "https://www.youtube.com/watch?v=3QlE0quVuzA",
-      "https://www.youtube.com/watch?v=i1myttn6CyA",
-      "https://www.youtube.com/watch?v=u0qlPZajxbk",
-      "https://www.youtube.com/watch?v=qQI7WKIh4Fs",
-      "https://www.youtube.com/watch?v=yOpddlY7D10",
-      "https://www.youtube.com/watch?v=B5jjC7nu6eU",
-      "https://www.youtube.com/watch?v=HXQJf6nTdqw",
-      "https://www.youtube.com/watch?v=WYWP9cwvXNk",
-      "https://www.youtube.com/watch?v=os69ahINK_4"
+    {
+      "link": "https://www.youtube.com/watch?v=J_1qp3EZqdE",
+      "title": "Acoustic Boyz"
+    },
+    {
+      "link": "https://www.youtube.com/watch?v=3QlE0quVuzA",
+      "title": "Ramblin Sam (Acoustic) Live at Opening Bell Coffee"
+    },
+    {
+      "link": "https://www.youtube.com/watch?v=i1myttn6CyA",
+      "title": "Ramblin Man (Allman Brothers)"
+    },
+    {
+      "link": "https://www.youtube.com/watch?v=u0qlPZajxbk",
+      "title": "Party's Over (Kyle Smith)"
+    },
+    {
+      "link": "https://www.youtube.com/watch?v=qQI7WKIh4Fs",
+      "title": "Waiting In Vain (Bob Marley)"
+    },
+    {
+      "link": "https://www.youtube.com/watch?v=yOpddlY7D10",
+      "title": "Jazzy (Acoustic)"
+    },
+    {
+      "link": "https://www.youtube.com/watch?v=B5jjC7nu6eU",
+      "title": "\"All On You\" Live at S27 Alehouse - San Jose, California"
+    },
+    {
+      "link": "https://www.youtube.com/watch?v=HXQJf6nTdqw",
+      "title": "Winds Of Change"
+    },
+    {
+      "link": "https://www.youtube.com/watch?v=WYWP9cwvXNk",
+      "title": "American Remains (The Highwaymen)"
+    },
+    {
+      "link": "https://www.youtube.com/watch?v=os69ahINK_4",
+      "title": "Frontline (Ian Santilliano)"
+    }
   ],
   "bandphotos": [
-      "https://lh3.googleusercontent.com/zl_uAaJWZnNMTTvFiM73jZ-qsY6f7v2HLpn43dll2vbQR02HAkfe_5BnNwRf7Zu6kKicqMql-ihLuPurntKBfdlXPirSlWj8UQ7x0oK0is7uba4kBZd1OYYhRnPgLnShPoK8ktFXHQ",
-      "https://lh3.googleusercontent.com/Z3viV3lbvFijuGp7aVsqrp-T_v4vyyOPJuYA2iLYO6ZfktB-HcGfJX5K0i0juxUGhZh-VzBtBti5ZlEWBqcbMc85AoctaXIGFYd4WyHOVCiHIIPuKyv-08j1reWLiVHZ0m3PmAP3mg",
-      "https://lh3.googleusercontent.com/gPY0rqlGIbL4KiYGP3zXMKU_uY4XJG9t-HM5zLei2dHFpm1zzrJSavfCIr5DdSFbme30eKl0rL_fCDkzd5XsNQUN3K0KOJTDUseVYQwx_4BTtuCod3yOT5J_4GKzc6_ZFQdI_luoNw",
-      "https://lh3.googleusercontent.com/8zJzgI_GPx5K-tujHueo54AF2Yhu1HYpcQT0pVhx-s4fHAueZRWjlm8whQ7wm95zwWVm36pQYxpuUymwhpqW65xBcQv8R8k8DLZNY9oLSd6gZGskeHTITvoBZX0ysKcLZTPB_kbicU4",
-      "https://lh3.googleusercontent.com/RHERdSI_tW46uHNI8tQQdJZjo-FvjcFqdgYcvxiP5vL7DCraxdM1Idz-19uQmGNIM7X0S9fNcUrjdknw8WJrSw0jPliiIxmn-hH_6WAvtGAKKDfQMMrL5OnjovLQTxF7VFp5v8tKvY8",
-      "https://lh3.googleusercontent.com/DLJlJkbnUVU6q9BnvbhxLw7yoIqtC3fz3wA405juRd-7pgsp1sNw_TQBECbnclQCvLgJdrTMK13sqbeT5cXSp_c5EYHuuONh_TPoXN82Ul0ia6HJ_mnbQWbGTdSiLAKkLQKxXPDy-Wo",
-      "https://lh3.googleusercontent.com/I0FbSMNrV8U4Q-t6XzZWTJN5RrbmhXCwLJ0Z0tYGadtcj0PSEhoWR4RlUHqXG08EsMj0O8YjiQwhWydFfxIwMrjJpV7CShYZ7d0IML9JcNXm_-n-Aoy-p29AdFmNp4Dge3ncc5ZdEJg"
+    "img/band/6.jpg",
+    "img/band/5.jpg",
+    "img/band/4.jpg",
+    "img/band/3.jpg",
+    "img/band/2.jpg",
+    "img/band/1.jpg"
   ],
-  "backgroundImage": "https://lh3.googleusercontent.com/gPY0rqlGIbL4KiYGP3zXMKU_uY4XJG9t-HM5zLei2dHFpm1zzrJSavfCIr5DdSFbme30eKl0rL_fCDkzd5XsNQUN3K0KOJTDUseVYQwx_4BTtuCod3yOT5J_4GKzc6_ZFQdI_luoNw",
+  "backgroundImage": "img/background.jpg",
   "links": [
-      {
-          "text": "Spotify",
-          "logo": "fa-spotify",
-          "link": "https://open.spotify.com/artist/1wg0T50ugsycU3EyXm38ib"
-      },
-      {
-          "text": "Youtube",
-          "logo": "fa-youtube",
-          "link": "https://www.youtube.com/channel/UC2r6coaUzbQOjzX0NOOkUgw/videos"
-      },        {
-          "text": "Apple Music",
-          "logo": "fa-apple",
-          "link": "https://music.apple.com/us/artist/nessie-the-great/1204360863"
-      },        {
-          "text": "Soundcloud",
-          "logo": "fa-soundcloud",
-          "link": "https://soundcloud.com/nessiethegreatofficial"
-      },        {
-          "text": "Instagram",
-          "logo": "fa-instagram",
-          "link": "https://www.instagram.com/nessiethegreatofficial/"
-      },        {
-          "text": "TikTok",
-          "logo": "fa-vine",
-          "link": "https://www.tiktok.com/@nessiethegreat?lang=en"
-      },        {
-          "text": "Twitch",
-          "logo": "fa-twitch",
-          "link": "https://www.twitch.tv/nessiethegreatofficial"
-      },        {
-          "text": "Facebook",
-          "logo": "fa-facebook-official",
-          "link": "https://www.facebook.com/NessieTheGreatOfficial"
-      },        {
-          "text": "Twitter",
-          "logo": "fa-twitter",
-          "link": "https://twitter.com/NessieTheGreat_"
-      },        {
-          "text": "Email",
-          "logo": "fa-envelope-o",
-          "link": "mailto: band@nessiethegreat.com"
-      }
+    {
+      "text": "Spotify",
+      "logo": "fa-spotify",
+      "link": "https://open.spotify.com/artist/1wg0T50ugsycU3EyXm38ib"
+    },
+    {
+      "text": "Youtube",
+      "logo": "fa-youtube",
+      "link": "https://www.youtube.com/channel/UC2r6coaUzbQOjzX0NOOkUgw/videos"
+    },
+    {
+      "text": "Apple Music",
+      "logo": "fa-apple",
+      "link": "https://music.apple.com/us/artist/nessie-the-great/1204360863"
+    },
+    {
+      "text": "Soundcloud",
+      "logo": "fa-soundcloud",
+      "link": "https://soundcloud.com/nessiethegreatofficial"
+    },
+    {
+      "text": "Instagram",
+      "logo": "fa-instagram",
+      "link": "https://www.instagram.com/nessiethegreatofficial/"
+    },
+    {
+      "text": "TikTok",
+      "logo": "fa-user-secret",
+      "link": "https://www.tiktok.com/@nessiethegreat?lang=en"
+    },
+    {
+      "text": "Twitch",
+      "logo": "fa-twitch",
+      "link": "https://www.twitch.tv/nessiethegreatofficial"
+    },
+    {
+      "text": "Facebook",
+      "logo": "fa-facebook-official",
+      "link": "https://www.facebook.com/NessieTheGreatOfficial"
+    },
+    {
+      "text": "Twitter",
+      "logo": "fa-twitter",
+      "link": "https://twitter.com/NessieTheGreat_"
+    },
+    {
+      "text": "Email",
+      "logo": "fa-envelope",
+      "link": "mailto: band@nessiethegreat.com"
+    }
   ],
-  "bandbio": "The story begins in San Jose, California. Juan-Carlos Sandoval and Carson Lewis started playing music together in 2014. Having multiple drummers over the years, they started playing shows all over San Jose and the Bay Area.The band was constantly playing shows wherever they could get booked. They became known for their reggae/rock sound and always had surprises in their live shows; you never knew when they would whip out a new and unexpected style. While blending genres, the bands backbone has always been reggae rock and blues. In 2022, the band relocated to Dallas, Texas. They can be found playing shows all DFW. Eventually they are looking to take this show on the road and spread that sweet sound. They have stated that their only goal as a band is to make people groove.",
+  "bandbio": "The story begins in San Jose, California. Juan-Carlos Sandoval and Carson Lewis started playing music together in 2014. Having multiple drummers over the years, they started playing shows all over San Jose and the Bay Area. The band was constantly playing shows wherever they could get booked. They became known for their reggae/rock sound and always had surprises in their live shows; you never knew when they would whip out a new and unexpected style. While blending genres, the bands backbone has always been reggae, rock, and blues. In 2022, the band relocated to Dallas, Texas. They can be found playing shows all over the DFW area. Eventually they are looking to take this show on the road and spread that sweet sound. They have stated that their only goal as a band is to make people groove.",
   "bandmembers": [
-      {
-          "name": "Carson Lewis",
-          "bio": "Known to play guitar and slay on mic, he will blast you with an energetic stage presence, right before getting off stage and getting back to being his lazy self. He is a BBQ super fan and is on a journey to try all of Texas's best spots. He lives an \"ever bulking\" lifestyle. ",
-          "picture": "https://lh3.googleusercontent.com/Cb66ulZCqjnC6hSqPGd7n1pnFV1IfYb616-CiW-k9pt_i7XazXenIPiHF8iI9s_w_bhOs4dQITpSYzJ8LJXjpVxHYhPjGkF7jBh6p9nLV8DSY5_Rl-23VJeZoR5LEd21S8HTToCVc8Y"
-      },
-      {
-          "name": "Juan-Carlos Sandoval",
-          "bio": "A rumbling bumbling bass machine, know for a deep smooth tone and holding down a rhythm impossible not to dance to. He's also an animal whisperer although he is afraid of them at the same time. He is the pride of Michoacán",
-          "picture": "https://lh3.googleusercontent.com/psLcMqSWlENwv-FQROogqPuwvaW1K-XomBva-ANuQi_fOkpgZN9PQ6ytBNu2XjCk73nySe0J4jiqkS-4LdGJCzJlsDp_3NHu3mIgpyqqL8nud7pH5UdalRScX9oJPKqI1IxY8E670Vk"
-      },
-      {
-          "name": "Mr. Miercoles",
-          "bio": "Band mascot. Doesn't like the sun.",
-          "picture": "img/cat.jpg"
-      }
+    {
+      "name": "Carson Lewis",
+      "bio": "Known to play guitar and slay on mic, he will blast you with an energetic stage presence, right before getting off stage and getting back to being his lazy self. He is a BBQ super fan and is on a journey to try all of Texas's best spots. He lives an \"ever bulking\" lifestyle. ",
+      "picture": "img/members/carson.jpg"
+    },
+    {
+      "name": "Juan-Carlos Sandoval",
+      "bio": "A rumbling bumbling bass machine, know for a deep smooth tone and holding down a rhythm impossible not to dance to. He's also an animal whisperer although he is afraid of most of these animals at the same time. He is the pride of Michoacán",
+      "picture": "img/members/juan.jpg"
+    },
+    {
+      "name": "Mr. Miercoles II",
+      "bio": "The band's fearless mascot. He also answers to Ronald or Ronaldinho. His favorite treat is the Friskies Party Mix Chicken Waffle Crunch mix. Some would say he is the heart and soul of the band.",
+      "picture": "img/members/ronald.jpg"
+    },
+    {
+      "name": "Lucas",
+      "bio": "The band's fearful mascot. Lucas is afraid of a lot of things, including loud noises, crowds, and new people. He also gets nervous before the band's performances.",
+      "picture": "img/members/luke.jpg"
+    }
   ],
-  "spotifyalbums": [
-      {
-          "link": "https://open.spotify.com/album/2NNajtdRJAnyx2TEXcS9GG?si=iPlEpNXpQz-NhV0K8-AtIA",
-          "title": "M L K",
-          "year": "2022",
-          "tracks": "1"
-      },
-      {
-          "link": "https://open.spotify.com/album/3vRi8ylCGoRxQKK1v5PWUr?si=MHtku8s5RnGKVuHnXKGTjg",
-          "title": "Friday",
-          "year": "2021",
-          "tracks": "1"
-      },
-      {
-          "link": "https://open.spotify.com/album/2DGWuTWyZ9sheQFqqDnf0A?si=BpiEooS9Rd6QrzmdmZa7XA",
-          "title": "All On You",
-          "year": "2021",
-          "tracks": "1"
-      },
-      {
-          "link": "https://open.spotify.com/album/3VnGtT2DN2zFbVtrmJQPSa?si=8evOHuTLTsy6FQf98nyrUg",
-          "title": "Midnight Rider",
-          "year": "2020",
-          "tracks": "1"
-      },
-      {
-          "link": "https://open.spotify.com/album/0GbnJ9TdOAFET46ukwtmYN?si=odndzWouRD6X9c2wieiTlw",
-          "title": "Chasing the Sun",
-          "year": "2019",
-          "tracks": "12"
-      },
-      {
-          "link": "https://open.spotify.com/album/6sxHlOXFoxnTgJAQCl1EMO?si=wlUaZhq0Tjup7NnZXBugYw",
-          "title": "License to Splash",
-          "year": "2017",
-          "tracks": "5"
-      }
+  "music": [
+    {
+      "type": "Single",
+      "title": "Waterstone",
+      "year": "2022",
+      "cover": "img/covers/waterstone.jpg",
+      "audio": "audio/tracks/waterstone.mp3",
+      "spotify": "https://open.spotify.com/track/6YrK0FVnrUgbOcziJSUq5D",
+      "soundcloud": "https://soundcloud.com/nessiethegreatofficial/waterstone",
+      "applemusic": "https://music.apple.com/us/album/waterstone-single/1661901960"
+    },
+    {
+      "type": "Single",
+      "title": "M L K",
+      "year": "2022",
+      "cover": "img/covers/mlk.jpg",
+      "audio": "audio/tracks/mlk.mp3",
+      "spotify": "https://open.spotify.com/track/1vKbyuvePFnCxYwIhtDfIz",
+      "soundcloud": "https://soundcloud.com/nessiethegreatofficial/mlk",
+      "applemusic": "https://music.apple.com/us/album/m-l-k-single/1622739306"
+    },
+    {
+      "type": "Single",
+      "title": "Friday",
+      "year": "2021",
+      "cover": "img/covers/friday.jpg",
+      "audio": "audio/tracks/friday.mp3",
+      "spotify": "https://open.spotify.com/track/2f2Sddru9XWEMvZ3lt4La9",
+      "soundcloud": "https://soundcloud.com/nessiethegreatofficial/friday",
+      "applemusic": "https://music.apple.com/us/album/friday-feat-a-f-r-o-single/1600359493"
+    },
+    {
+      "type": "Single",
+      "title": "All on You",
+      "year": "2021",
+      "cover": "img/covers/allonyou.jpg",
+      "audio": "audio/tracks/allonyou.mp3",
+      "spotify": "https://open.spotify.com/track/2gPfCWZJLwEllMtQGn9AlW",
+      "soundcloud": "https://soundcloud.com/nessiethegreatofficial/all-on-you",
+      "applemusic": "https://music.apple.com/us/album/all-on-you-single/1586011180"
+    },
+    {
+      "type": "Single",
+      "title": "Midnight Rider",
+      "year": "2020",
+      "cover": "img/covers/midnightrider.jpg",
+      "audio": "audio/tracks/midnightrider.mp3",
+      "spotify": "https://open.spotify.com/track/2xrLUrzJzbxWNhdjst8Tmw",
+      "soundcloud": "https://soundcloud.com/nessiethegreatofficial/midnight-rider",
+      "applemusic": "https://music.apple.com/us/album/midnight-rider-single/1527654677"
+    },
+    {
+      "type": "Album",
+      "title": "Chasing the Sun",
+      "year": "2019",
+      "artist": "Nessie the Great",
+      "length": "44 min 46 sec",
+      "cover": "img/covers/chasingthesun.jpg",
+      "tracks": [
+        {
+          "title": "Jazzy",
+          "audio": "audio/tracks/jazzy.mp3",
+          "spotify": "https://open.spotify.com/track/4OwsEtmWTT8BFdx6vSJXkR",
+          "soundcloud": "https://soundcloud.com/nessiethegreatofficial/jazzy?in=nessiethegreatofficial/sets/chasing-the-sun",
+          "applemusic": "https://music.apple.com/us/album/jazzy/1448759327?i=1448759332"
+        },
+        {
+          "title": "Astronaut Bop",
+          "audio": "audio/tracks/astronautbop.mp3",
+          "spotify": "https://open.spotify.com/track/19BjsHIfK0agTKY5ZNgIzz",
+          "soundcloud": "https://soundcloud.com/nessiethegreatofficial/astronaut-bop?in=nessiethegreatofficial/sets/chasing-the-sun",
+          "applemusic": "https://music.apple.com/us/album/astronaut-bop/1448759327?i=1448759337"
+        },
+        {
+          "title": "Excited Boy",
+          "audio": "audio/tracks/excitedboy.mp3",
+          "spotify": "https://open.spotify.com/track/4qFi5RPpo29kiGa2EYvo5f",
+          "soundcloud": "https://soundcloud.com/nessiethegreatofficial/excited-boy?in=nessiethegreatofficial/sets/chasing-the-sun",
+          "applemusic": "https://music.apple.com/us/album/excited-boy/1448759327?i=1448759339"
+        },
+        {
+          "title": "Tangle with Janus",
+          "audio": "audio/tracks/tanglewithjanus.mp3",
+          "spotify": "https://open.spotify.com/track/1EzJN6MeYI3CYwcuen3rTi",
+          "soundcloud": "https://soundcloud.com/nessiethegreatofficial/tangle-with-janus?in=nessiethegreatofficial/sets/chasing-the-sun",
+          "applemusic": "https://music.apple.com/us/album/tangle-with-janus/1448759327?i=1448759340"
+        },
+        {
+          "title": "Soul Riff",
+          "audio": "audio/tracks/soulriff.mp3",
+          "spotify": "https://open.spotify.com/track/0Uz0dHxpCYWpo4YFq3tfND",
+          "soundcloud": "https://soundcloud.com/nessiethegreatofficial/soul-riff-1?in=nessiethegreatofficial/sets/chasing-the-sun",
+          "applemusic": "https://music.apple.com/us/album/soul-riff/1448759327?i=1448759343"
+        },
+        {
+          "title": "Too Much Bread, Not Enough Butter",
+          "audio": "audio/tracks/toomuchbreadnotenoughbutter.mp3",
+          "spotify": "https://open.spotify.com/track/5vmRKlzd5ytskiUfHRzxVZ",
+          "soundcloud": "https://soundcloud.com/nessiethegreatofficial/too-much-bread-not-enough?in=nessiethegreatofficial/sets/chasing-the-sun",
+          "applemusic": "https://music.apple.com/us/album/too-much-bread-not-enough-butter/1448759327?i=1448759344"
+        },
+        {
+          "title": "Buzzkillington",
+          "audio": "audio/tracks/buzzkillington.mp3",
+          "spotify": "https://open.spotify.com/track/08kUptiOziH6Rash9ImexH",
+          "soundcloud": "https://soundcloud.com/nessiethegreatofficial/buzz-killington?in=nessiethegreatofficial/sets/chasing-the-sun",
+          "applemusic": "https://music.apple.com/us/album/buzzkillington/1448759327?i=1448759346"
+        },
+        {
+          "title": "Larry Lobster",
+          "audio": "audio/tracks/larrylobster.mp3",
+          "spotify": "https://open.spotify.com/track/5rKX3hEI8btEjpW1RRDsrq",
+          "soundcloud": "https://soundcloud.com/nessiethegreatofficial/larry-lobster?in=nessiethegreatofficial/sets/chasing-the-sun",
+          "applemusic": "https://music.apple.com/us/album/larry-lobster/1448759327?i=1448759347"
+        },
+        {
+          "title": "Egomaniac",
+          "audio": "audio/tracks/egomaniac.mp3",
+          "spotify": "https://open.spotify.com/track/7924wk9aQh5Wu3NXHENR4R",
+          "soundcloud": "https://soundcloud.com/nessiethegreatofficial/egomaniac?in=nessiethegreatofficial/sets/chasing-the-sun",
+          "applemusic": "https://music.apple.com/us/album/egomaniac/1448759327?i=1448759349"
+        },
+        {
+          "title": "Pine",
+          "audio": "audio/tracks/pine.mp3",
+          "spotify": "https://open.spotify.com/track/53Wsp43alEFiOM3sUXE9lx",
+          "soundcloud": "https://soundcloud.com/nessiethegreatofficial/pine-1?in=nessiethegreatofficial/sets/chasing-the-sun",
+          "applemusic": "https://music.apple.com/us/album/pine/1448759327?i=1448759350"
+        },
+        {
+          "title": "Little Missions",
+          "audio": "audio/tracks/littlemissions.mp3",
+          "spotify": "https://open.spotify.com/track/6Ot2Ap219qY1yPs5pHUBOi",
+          "soundcloud": "https://soundcloud.com/nessiethegreatofficial/little-missions?in=nessiethegreatofficial/sets/chasing-the-sun",
+          "applemusic": "https://music.apple.com/us/album/little-missions/1448759327?i=1448759382"
+        },
+        {
+          "title": "Stylin'",
+          "audio": "audio/tracks/stylin.mp3",
+          "spotify": "https://open.spotify.com/track/1aS27e5nkx7Jrpn5o6q7WG",
+          "soundcloud": "https://soundcloud.com/nessiethegreatofficial/stylin?in=nessiethegreatofficial/sets/chasing-the-sun",
+          "applemusic": "https://music.apple.com/us/album/stylin/1448759327?i=1448759383"
+        }
+      ]
+    },
+    {
+      "type": "Album",
+      "title": "License to Splash",
+      "year": "2017",
+      "artist": "Nessie the Great",
+      "length": "15 min 39 sec",
+      "cover": "img/covers/licensetosplash.jpg",
+      "tracks": [
+        {
+          "title": "Diagnosis",
+          "audio": "audio/tracks/diagnosis.mp3",
+          "spotify": "https://open.spotify.com/track/5qPSoXZGEmNZP2uWqF0u52",
+          "soundcloud": "https://soundcloud.com/nessiethegreatofficial/diagnosis-1?in=nessiethegreatofficial/sets/license-to-splash",
+          "applemusic": "https://music.apple.com/us/album/diagnosis/1204360780?i=1204360866"
+        },
+        {
+          "title": "Rocket Ship",
+          "audio": "audio/tracks/rocketship.mp3",
+          "spotify": "https://open.spotify.com/track/3HyRZP9Q8RlHjMA9fr4HHY",
+          "soundcloud": "https://soundcloud.com/nessiethegreatofficial/rocket-ship?in=nessiethegreatofficial/sets/license-to-splash",
+          "applemusic": "https://music.apple.com/us/album/rocket-ship/1204360780?i=1204360870"
+        },
+        {
+          "title": "Trouble in Tobey's Paradise",
+          "audio": "audio/tracks/troubleintobeysparadise.mp3",
+          "spotify": "https://open.spotify.com/track/15schdXHCGSFfyK6T6KrGo",
+          "soundcloud": "https://soundcloud.com/nessiethegreatofficial/trouble-in-tobeys-paradise?in=nessiethegreatofficial/sets/license-to-splash",
+          "applemusic": "https://music.apple.com/us/album/trouble-in-tobeys-paradise/1204360780?i=1204361081"
+        },
+        {
+          "title": "The Boy Got No Fyah",
+          "audio": "audio/tracks/theboygotnofyah.mp3",
+          "spotify": "https://open.spotify.com/track/20ZXPYH3vjJ6C9KNdhitOZ",
+          "soundcloud": "https://soundcloud.com/nessiethegreatofficial/boys-got-no-fyah?in=nessiethegreatofficial/sets/license-to-splash",
+          "applemusic": "https://music.apple.com/us/album/the-boy-got-no-fyah/1204360780?i=1204361082"
+        },
+        {
+          "title": "Mexican Mrs.",
+          "audio": "audio/tracks/mexicanmrs.mp3",
+          "spotify": "https://open.spotify.com/track/6dtyfqsf4bkxGHWmL5fObu",
+          "soundcloud": "https://soundcloud.com/nessiethegreatofficial/mexican-mrs?in=nessiethegreatofficial/sets/license-to-splash",
+          "applemusic": "https://music.apple.com/us/album/mexican-mrs/1204360780?i=1204361083"
+        }
+      ]
+    }
   ]
 }
