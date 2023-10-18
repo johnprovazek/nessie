@@ -20,13 +20,12 @@ This website was built with the intent to be hosted on GitHub Pages and pull the
 
 [font-awesome](https://fontawesome.com/v4/icons/) was used for the icons.
 
-[Let’s Create a Custom Audio Player](https://css-tricks.com/lets-create-a-custom-audio-player/) is a guide I followed to setup custom audio players.
-
+[Let’s Create a Custom Audio Player](https://css-tricks.com/lets-create-a-custom-audio-player/) is a guide I followed to setup the custom audio players.
 
 ## Bugs & Improvements
 
-- Recreate the band logo to remove css border hack.
+- Recreate the band logo to remove the css border hack.
 - Consider either converting the audio player to a web component or rewriting website as a react or angular application.
 - Improve page/image loading.
-- Invesigate filling negative space with background decorations while avoiding text and images.
+- Investigate filling negative space with background decorations while avoiding text and images.
 - Use a linter and a style guide.
