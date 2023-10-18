@@ -77,15 +77,15 @@ async function addAbout(){
   let bandBio = createElement(`<p id='about-band-bio'>${jsonData['bandbio']}</p>`);
   containerElement.appendChild(bandBio);
   // Add band members title.
-  let bandMembersTitle = createElement(`<div class='bold-title' id='about-band-members-title'>Members:</div>`);
+  let bandMembersTitle = createElement(`<div class='bold-title' id='about-band-members-title'><span>Members</span></div>`);
   containerElement.appendChild(bandMembersTitle);
   // Add band members.
   for (let i = 0; i < jsonData['bandmembers'].length; i++){
     let bandMember = createElement(`
       <div class='band-member-container'>
         <div class='about-band-member-text'>
-          <div class='bold-title-sm'>${jsonData['bandmembers'][i]['name']}</div>
-          <div class='band-member-bio'>${jsonData['bandmembers'][i]['bio']}</div>
+          <div class='bold-title-sm'><span>${jsonData['bandmembers'][i]['name']}</span></div>
+          <div class='band-member-bio'><span>${jsonData['bandmembers'][i]['bio']}</span></div>
         </div>
         <img class='about-band-member-picture' src=${jsonData['bandmembers'][i]['picture']}>
       </div>
@@ -93,7 +93,7 @@ async function addAbout(){
     containerElement.appendChild(bandMember);
   }
   // Adding anchor gif to the section.
-  let anchorGif = createElement(`<img src='img/anchor/anchor.png' id='about-gif' class='anchor-gif'>`);
+  let anchorGif = createElement(`<img src='img/anchor/about.gif' id='about-gif' class='anchor-gif'>`);
   containerElement.appendChild(anchorGif);
 }
 
@@ -110,7 +110,7 @@ async function addLinks(){
     containerElement.appendChild(link);
   }
   // Adding anchor gif to the section.
-  let anchorGif = createElement(`<img src='img/anchor/anchor.png' id='links-gif' class='anchor-gif'>`);
+  let anchorGif = createElement(`<img src='img/anchor/links.gif' id='links-gif' class='anchor-gif'>`);
   containerElement.appendChild(anchorGif);
 }
 
@@ -128,8 +128,9 @@ async function addVideos(){
     }
     let videoTitleElement = createElement(`<div class='${videoTitleClass}' id=${link_code + '_title'}></div>`);
     if(jsonData['bandvideos'][i].hasOwnProperty('title')){ 
-      const textNode = document.createTextNode(jsonData['bandvideos'][i]['title']);
-      videoTitleElement.appendChild(textNode);
+      let spanNode = document.createElement('span')
+      spanNode.innerHTML = jsonData['bandvideos'][i]['title'];
+      videoTitleElement.appendChild(spanNode);
     }
     else{
       readTextFile('https://www.youtube.com/oembed?url=' + link + '&format=json', link_code, function(text, video_id){
@@ -148,7 +149,7 @@ async function addVideos(){
     containerElement.appendChild(liteYoutube);
   }
   // Adding anchor gif to the section.
-  let anchorGif = createElement(`<img src='img/anchor/anchor.png' id='videos-gif' class='anchor-gif'>`);
+  let anchorGif = createElement(`<img src='img/anchor/videos.gif' id='videos-gif' class='anchor-gif'>`);
   containerElement.appendChild(anchorGif);
 }
 
@@ -161,7 +162,7 @@ async function addPhotos(){
     containerElement.appendChild(bandPic);
   }
   // Adding anchor gif to the section.
-  let anchorGif = createElement(`<img src='img/anchor/anchor.png' id='photos-gif' class='anchor-gif'>`);
+  let anchorGif = createElement(`<img src='img/anchor/photos.gif' id='photos-gif' class='anchor-gif'>`);
   containerElement.appendChild(anchorGif);
 }
 
@@ -244,7 +245,7 @@ async function addMusic(){
     }
   }
   // Adding anchor gif to the section.
-  let anchorGif = createElement(`<img src='img/anchor/anchor.png' id='music-gif' class='anchor-gif'>`);
+  let anchorGif = createElement(`<img src='img/anchor/music.gif' id='music-gif' class='anchor-gif'>`);
   containerElement.appendChild(anchorGif);
 }
 

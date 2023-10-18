@@ -26,6 +26,7 @@ This website was built with the intent to be hosted on GitHub Pages and pull the
 ## Bugs & Improvements
 
 - Recreate the band logo to remove css border hack.
-- Add anchor gifs to each page.
 - Consider either converting the audio player to a web component or rewriting website as a react or angular application.
+- Improve page/image loading.
+- Invesigate filling negative space with background decorations while avoiding text and images.
 - Use a linter and a style guide.
