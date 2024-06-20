@@ -42,14 +42,14 @@
     }
   ],
   "bandphotos": [
-    "img/band/6.jpg",
-    "img/band/5.jpg",
-    "img/band/4.jpg",
-    "img/band/3.jpg",
-    "img/band/2.jpg",
-    "img/band/1.jpg"
+    "images/band/6.jpg",
+    "images/band/5.jpg",
+    "images/band/4.jpg",
+    "images/band/3.jpg",
+    "images/band/2.jpg",
+    "images/band/1.jpg"
   ],
-  "backgroundImage": "img/background.jpg",
+  "backgroundImage": "images/background-ai.jpg",
   "links": [
     {
       "text": "Spotify",
@@ -102,22 +102,22 @@
     {
       "name": "Carson Lewis",
       "bio": "Known to play guitar and slay on mic, he will blast you with an energetic stage presence, right before getting off stage and getting back to being his lazy self. He is a BBQ super fan and is on a journey to try all of Texas's best spots. He lives an \"ever bulking\" lifestyle. ",
-      "picture": "img/members/carson.jpg"
+      "picture": "images/members/carson.jpg"
     },
     {
       "name": "Juan-Carlos Sandoval",
       "bio": "A rumbling bumbling bass machine, know for a deep smooth tone and holding down a rhythm impossible not to dance to. He's also an animal whisperer although he is afraid of most of these animals at the same time. He is the pride of Michoacán",
-      "picture": "img/members/juan.jpg"
+      "picture": "images/members/juan.jpg"
     },
     {
       "name": "Mr. Miercoles II",
       "bio": "The band's fearless mascot. He also answers to Ronald or Ronaldinho. His favorite treat is the Friskies Party Mix Chicken Waffle Crunch mix. Some would say he is the heart and soul of the band.",
-      "picture": "img/members/ronald.jpg"
+      "picture": "images/members/ronald.jpg"
     },
     {
       "name": "Lucas",
       "bio": "The band's fearful mascot. Lucas is afraid of a lot of things, including loud noises, crowds, and new people. He also gets nervous before the band's performances.",
-      "picture": "img/members/luke.jpg"
+      "picture": "images/members/luke.jpg"
     }
   ],
   "music": [
@@ -125,7 +125,7 @@
       "type": "Single",
       "title": "Waterstone",
       "year": "2022",
-      "cover": "img/covers/waterstone.jpg",
+      "cover": "images/covers/waterstone.jpg",
       "audio": "audio/tracks/waterstone.mp3",
       "spotify": "https://open.spotify.com/track/6YrK0FVnrUgbOcziJSUq5D",
       "soundcloud": "https://soundcloud.com/nessiethegreatofficial/waterstone",
@@ -135,7 +135,7 @@
       "type": "Single",
       "title": "M L K",
       "year": "2022",
-      "cover": "img/covers/mlk.jpg",
+      "cover": "images/covers/mlk.jpg",
       "audio": "audio/tracks/mlk.mp3",
       "spotify": "https://open.spotify.com/track/1vKbyuvePFnCxYwIhtDfIz",
       "soundcloud": "https://soundcloud.com/nessiethegreatofficial/mlk",
@@ -145,7 +145,7 @@
       "type": "Single",
       "title": "Friday",
       "year": "2021",
-      "cover": "img/covers/friday.jpg",
+      "cover": "images/covers/friday.jpg",
       "audio": "audio/tracks/friday.mp3",
       "spotify": "https://open.spotify.com/track/2f2Sddru9XWEMvZ3lt4La9",
       "soundcloud": "https://soundcloud.com/nessiethegreatofficial/friday",
@@ -155,7 +155,7 @@
       "type": "Single",
       "title": "All on You",
       "year": "2021",
-      "cover": "img/covers/allonyou.jpg",
+      "cover": "images/covers/allonyou.jpg",
       "audio": "audio/tracks/allonyou.mp3",
       "spotify": "https://open.spotify.com/track/2gPfCWZJLwEllMtQGn9AlW",
       "soundcloud": "https://soundcloud.com/nessiethegreatofficial/all-on-you",
@@ -165,7 +165,7 @@
       "type": "Single",
       "title": "Midnight Rider",
       "year": "2020",
-      "cover": "img/covers/midnightrider.jpg",
+      "cover": "images/covers/midnightrider.jpg",
       "audio": "audio/tracks/midnightrider.mp3",
       "spotify": "https://open.spotify.com/track/2xrLUrzJzbxWNhdjst8Tmw",
       "soundcloud": "https://soundcloud.com/nessiethegreatofficial/midnight-rider",
@@ -177,7 +177,7 @@
       "year": "2019",
       "artist": "Nessie the Great",
       "length": "44 min 46 sec",
-      "cover": "img/covers/chasingthesun.jpg",
+      "cover": "images/covers/chasingthesun.jpg",
       "tracks": [
         {
           "title": "Jazzy",
@@ -271,7 +271,7 @@
       "year": "2017",
       "artist": "Nessie the Great",
       "length": "15 min 39 sec",
-      "cover": "img/covers/licensetosplash.jpg",
+      "cover": "images/covers/licensetosplash.jpg",
       "tracks": [
         {
           "title": "Diagnosis",

@@ -24,8 +24,7 @@ This website was built with the intent to be hosted on GitHub Pages and pull the
 
 ## Bugs & Improvements
 
-- Recreate the band logo to remove the css border hack.
-- Consider either converting the audio player to a web component or rewriting website as a react or angular application.
+- Recreate band logo to remove the css border hack.
 - Improve page/image loading.
+- Possibly switch to jinja templating.
 - Investigate filling negative space with background decorations while avoiding text and images.
-- Use a linter and a style guide.

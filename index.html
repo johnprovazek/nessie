@@ -1,68 +1,68 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>nessiethegreat</title>
-    <link rel='icon' href='img/favicon.ico?' type='image/x-icon'/ >
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <script src="js/index.js"></script>
-    <script src="js/lite-yt-embed.js"></script>
-    <link rel="stylesheet" href="css/lite-yt-embed.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/audioplayer.css">
+    <link rel="icon" href="images/favicon.ico?" type="images/x-icon" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/lite-yt-embed.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/audio-player.css" />
   </head>
   <body>
-    <div id="background-layer"></div>
-    <div class="grid-container-main">
-      <img id="main-band-logo" src="img/logo.svg" onclick="home()">
-      <button id="about-button" class="main-button" onclick="toggle('about')">
-        <span class="main-button-text">About</span>
-        <i class="main-button-icon fa fa-book"></i>
+    <div id="background"></div>
+    <div id="main-container">
+      <img id="band-logo" src="images/logo.svg" />
+      <button id="about-button" class="main-button hidden">
+        <span class="main-button-text hidden">About</span>
+        <i class="main-button-icon fa fa-book hidden"></i>
       </button>
-      <button id="music-button" class="main-button" onclick="toggle('music')">
-        <span class="main-button-text">Music</span>
-        <i class="main-button-icon fa fa-music"></i>
+      <button id="music-button" class="main-button hidden">
+        <span class="main-button-text hidden">Music</span>
+        <i class="main-button-icon fa fa-music hidden"></i>
       </button>
-      <button id="videos-button" class="main-button" onclick="toggle('videos')">
-        <span class="main-button-text">Videos</span>
-        <i class="main-button-icon fa fa-youtube-play"></i>
+      <button id="videos-button" class="main-button hidden">
+        <span class="main-button-text hidden">Videos</span>
+        <i class="main-button-icon fa fa-youtube-play hidden"></i>
       </button>
-      <button id="photos-button" class="main-button" onclick="toggle('photos')">
-        <span class="main-button-text">Photos</span>
-        <i class="main-button-icon fa fa-camera"></i>
+      <button id="photos-button" class="main-button hidden">
+        <span class="main-button-text hidden">Photos</span>
+        <i class="main-button-icon fa fa-camera hidden"></i>
       </button>
-      <button id="links-button" class="main-button" onclick="toggle('links')">
-        <span class="main-button-text">Links</span>
-        <i class="main-button-icon fa fa-at"></i>
+      <button id="links-button" class="main-button hidden">
+        <span class="main-button-text hidden">Links</span>
+        <i class="main-button-icon fa fa-at hidden"></i>
       </button>
-      <div id="about-content" class="content">
+      <div id="about-content" class="main-content hidden">
         <div id="about-container">
           <div id="about-title" class="bold-title">
             <span>About:</span>
           </div>
         </div>
       </div>
-      <div id="music-content" class="content">
+      <div id="music-content" class="main-content hidden">
         <div id="music-container">
           <div id="music-title" class="bold-title">
             <span>Music:</span>
           </div>
         </div>
       </div>
-      <div id="videos-content" class="content">
+      <div id="videos-content" class="main-content hidden">
         <div id="videos-container">
           <div id="videos-title" class="bold-title">
             <span>Videos:</span>
           </div>
         </div>
       </div>
-      <div id="photos-content" class="content">
+      <div id="photos-content" class="main-content hidden">
         <div id="photos-container">
-          <div id="pictures-title" class="bold-title">
+          <div id="photos-title" class="bold-title">
             <span>Pictures:</span>
           </div>
         </div>
       </div>
-      <div id="links-content" class="content">
+      <div id="links-content" class="main-content hidden">
         <div id="links-container">
           <div id="links-title" class="bold-title">
             <span>Links:</span>
@@ -70,6 +70,9 @@
         </div>
       </div>
     </div>
-    <script src="js/audioplayer.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/audio-player.js"></script>
+    <script src="js/lite-yt-embed.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
