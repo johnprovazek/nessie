@@ -17,7 +17,8 @@ function createAudioPlayer(trackData, includeCover) {
           <input type='range' step='0.1' class='seek-slider' max='100' value='0'
             oninput=handleSeekSlider('${audioPlayerId}')
             onchange=setAudioTime('${audioPlayerId}')
-            onmouseup=onMouseUp('${audioPlayerId}')
+            onmouseup=seekSliderRelease('${audioPlayerId}')
+            ontouchend=seekSliderRelease('${audioPlayerId}')
           >
           <button class='audio-button mute-toggle' onclick=toggleMute('${audioPlayerId}') ><i class='mute-toggle-icon fa fa-volume-up'></i></button>
         </div>
@@ -186,7 +187,7 @@ function resetAudio(audioPlayerId) {
 }
 
 // Handles release of seek slider.
-function onMouseUp(audioPlayerId) {
+function seekSliderRelease(audioPlayerId) {
   let audioPlayer = document.getElementById(audioPlayerId);
   let seekSlider = audioPlayer.querySelector(".seek-slider");
   if (seekSlider.classList.contains("seeking")) {
