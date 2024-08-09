@@ -6,6 +6,12 @@ The inspiration behind this project was to build a simple website for my friendâ
 
 Built using vanilla JavaScript.
 
+<div align="center">
+  <picture>
+    <img src="https://github.com/user-attachments/assets/4229464e-9249-4a77-9f62-3111c1908835" width="830px">
+  </picture>
+</div>
+
 ## Installation
 
 This project wasn't intended to be duplicated. However, if you are an aspiring band and enjoy the layout feel free to clone this repo and use it as a template.
