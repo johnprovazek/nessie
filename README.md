@@ -2,7 +2,7 @@
 
 ## Description
 
-The inspiration behind this project was to build a simple website for my friend’s band Nessie the Great. You can access this website at [nessiethegreat.com](https://www.nessiethegreat.com).
+The inspiration behind this project was to build a simple website for my friend’s band Nessie the Great. You can access this website at [johnprovazek.com/nessiethegreat](https://www.johnprovazek.com/nessiethegreat/).
 
 Built using vanilla JavaScript.
 
