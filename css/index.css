@@ -112,7 +112,7 @@ p {
 
 @media (min-width: 1073px) {
   #main-container {
-    width: 40%;
+    width: min(40%, 800px);
   }
 }
 

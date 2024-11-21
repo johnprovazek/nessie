@@ -56,7 +56,7 @@ async function addAbout() {
   let bandBio = createElement(`<p id='about-band-bio'>${jsonData["bandbio"]}</p>`);
   containerElement.appendChild(bandBio);
   // Add band members title.
-  let bandMembersTitle = createElement(`<div class='bold-title' id='about-band-members-title'>Members</div>`);
+  let bandMembersTitle = createElement(`<div class='bold-title' id='about-band-members-title'>Members:</div>`);
   containerElement.appendChild(bandMembersTitle);
   // Add band members.
   jsonData["bandmembers"].forEach((bandMember) => {
